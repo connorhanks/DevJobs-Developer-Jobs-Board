@@ -1,11 +1,16 @@
 <script setup>
 import Navbar from "@/components/Navbar.vue";
+import Hero from "@/components/Hero.vue";
+import HomeCards from "@/components/HomeCards.vue";
 </script>
 
 <template>
   <Navbar />
-
-  <h1>Jobs Board</h1>
+  <Hero
+    title="Let's get you hired."
+    subtitle="Find the developer role that's right for you."
+  />
+  <HomeCards />
 </template>
 
 <style></style>
