@@ -1,10 +1,14 @@
 <script setup>
 import JobListing from "@/components/JobListing.vue";
 import jobData from "@/jobs.json";
-import { ref } from "vue";
+import { ref, defineProps } from "vue";
 
 const jobs = ref(jobData);
-console.log(jobs.value);
+
+// Used for setting max number of jobs to display on-load
+defineProps({
+  limit: Number,
+});
 </script>
 
 <template>
@@ -14,8 +18,10 @@ console.log(jobs.value);
         Browse Jobs
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Display each job until we've hit our 'limit', as defined above
+        If limit is truthy, use it, otherwise show all jobs -->
         <JobListing
-          v-for="(job, index) in jobs"
+          v-for="(job, index) in jobs.slice(0, limit || jobs.length)"
           :key="job.id"
           :jobId="job.id"
           :jobType="job.type"
