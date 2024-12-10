@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar.vue";
 import Hero from "@/components/Hero.vue";
 import HomeCards from "@/components/HomeCards.vue";
+import JobListings from "./components/JobListings.vue";
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import HomeCards from "@/components/HomeCards.vue";
     subtitle="Find the developer role that's right for you."
   />
   <HomeCards />
+  <JobListings />
 </template>
 
 <style></style>
