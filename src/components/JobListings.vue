@@ -8,6 +8,10 @@ const jobs = ref(jobData);
 // Used for setting max number of jobs to display on-load
 defineProps({
   limit: Number,
+  showButton: {
+    type: Boolean,
+    default: false,
+  },
 });
 </script>
 
@@ -23,14 +27,17 @@ defineProps({
         <JobListing
           v-for="(job, index) in jobs.slice(0, limit || jobs.length)"
           :key="job.id"
-          :jobId="job.id"
-          :jobType="job.type"
-          :jobTitle="job.title"
-          :jobDescription="job.description"
-          :jobSalary="job.salary"
-          :jobLocation="job.location"
+          :job="job"
         />
       </div>
     </div>
+  </section>
+
+  <section v-if="showButton" class="m-auto max-w-lg my-10 px-6">
+    <a
+      href="/jobs"
+      class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
+      >View All Jobs</a
+    >
   </section>
 </template>

@@ -12,7 +12,7 @@ import JobListings from "./components/JobListings.vue";
     subtitle="Find the developer role that's right for you."
   />
   <HomeCards />
-  <JobListings :limit="3" />
+  <JobListings :limit="3" :show-button="true" />
 </template>
 
 <style></style>
