@@ -1,7 +1,16 @@
 <script setup>
-import { RouterLink } from "vue-router";
+import { RouterLink, useRoute } from "vue-router";
 
 import logo from "@/assets/img/logo.png";
+import router from "@/router";
+
+// Checks if provided path matches user's current route path
+const isActiveLink = (routePath) => {
+  // Get current route
+  const route = useRoute();
+  // If route path is equal to routePath provided, return true, otherwise return false
+  return route.path === routePath;
+};
 </script>
 
 <template>
@@ -30,20 +39,44 @@ import logo from "@/assets/img/logo.png";
             <div class="flex space-x-2" role="menubar">
               <RouterLink
                 to="/"
-                class="text-white bg-green-900 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                :class="[
+                  isActiveLink('/')
+                    ? 'bg-green-900'
+                    : 'hover:bg-gray-900 hover:text-white',
+                  'text-white',
+                  'rounded-md',
+                  'px-3',
+                  'py-2',
+                ]"
                 role="menuitem"
                 aria-current="page"
                 >Home</RouterLink
               >
               <RouterLink
                 to="/jobs"
-                class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2"
+                :class="[
+                  isActiveLink('/jobs')
+                    ? 'bg-green-900'
+                    : 'hover:bg-gray-900 hover:text-white',
+                  'text-white',
+                  'rounded-md',
+                  'px-3',
+                  'py-2',
+                ]"
                 role="menuitem"
                 >Jobs</RouterLink
               >
               <RouterLink
                 to="/jobs/add"
-                class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2"
+                :class="[
+                  isActiveLink('/jobs/add')
+                    ? 'bg-green-900'
+                    : 'hover:bg-gray-900 hover:text-white',
+                  'text-white',
+                  'rounded-md',
+                  'px-3',
+                  'py-2',
+                ]"
                 role="menuitem"
                 >Add Job</RouterLink
               >
