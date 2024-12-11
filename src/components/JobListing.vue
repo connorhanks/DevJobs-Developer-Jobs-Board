@@ -1,8 +1,22 @@
 <script setup>
 import { ref, defineProps, computed } from "vue";
 
-defineProps({
+const props = defineProps({
   job: Object,
+});
+
+const showFullDescription = ref(false);
+const truncatedDescription = computed(() => {
+  // Set the description as the full, unmodified description
+  let description = props.job.description;
+
+  // If we don't want to show full description
+  if (!showFullDescription.value) {
+    // Truncate to first 90 characters
+    description = description.substring(0, 90) + "...";
+  }
+
+  return description;
 });
 </script>
 
@@ -15,7 +29,7 @@ defineProps({
       </div>
 
       <div class="mb-5">
-        {{ job.description }}
+        {{ truncatedDescription }}
       </div>
 
       <h3 class="text-green-500 mb-2">{{ job.salary }}</h3>
