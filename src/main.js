@@ -1,11 +1,14 @@
-import './assets/main.css'
+import "./assets/main.css";
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
-import App from './App.vue'
+import { createApp } from "vue";
+import { createPinia } from "pinia";
+import App from "./App.vue";
+import { registerIcons } from "./plugins/icons";
+import "vue-material-design-icons/styles.css";
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(createPinia())
+app.use(createPinia());
+registerIcons(app);
 
-app.mount('#app')
+app.mount("#app");
