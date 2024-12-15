@@ -2,7 +2,7 @@
 import { RouterLink } from "vue-router";
 
 import JobListing from "@/components/JobListing.vue";
-import { ref, defineProps, onMounted } from "vue";
+import { reactive, defineProps, onMounted } from "vue";
 
 // Used for setting max number of jobs to display on-load
 defineProps({
@@ -13,7 +13,10 @@ defineProps({
   },
 });
 
-const jobDataResponse = ref([]);
+const state = reactive({
+  jobs: [],
+  isLoading: true,
+});
 
 // GET request to backend to retrieve jobs data
 async function getJobsData() {
@@ -25,9 +28,9 @@ async function getJobsData() {
     }
 
     const json = await response.json();
-    jobDataResponse.value = json;
+    state.jobs = json;
   } catch (error) {
-    console.error(error.message);
+    console.error("Error fetching jobs:", error.message);
   }
 }
 
@@ -46,9 +49,9 @@ onMounted(async () => {
         <!-- Display each job until we've hit our 'limit', as defined above
         If limit is truthy, use it, otherwise show all jobs -->
         <JobListing
-          v-for="(job, index) in jobDataResponse.slice(
+          v-for="(job, index) in state.jobs.slice(
             0,
-            limit || jobDataResponse.length
+            limit || state.jobs.length
           )"
           :key="job.id"
           :job="job"
