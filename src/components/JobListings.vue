@@ -1,8 +1,9 @@
 <script setup>
+import { reactive, defineProps, onMounted } from "vue";
 import { RouterLink } from "vue-router";
+import PulseLoader from "vue-spinner/src/PulseLoader.vue";
 
 import JobListing from "@/components/JobListing.vue";
-import { reactive, defineProps, onMounted } from "vue";
 
 // Used for setting max number of jobs to display on-load
 defineProps({
@@ -31,6 +32,9 @@ async function getJobsData() {
     state.jobs = json;
   } catch (error) {
     console.error("Error fetching jobs:", error.message);
+  } finally {
+    // so spinner animation knows when to stop
+    state.isLoading = false;
   }
 }
 
@@ -45,7 +49,14 @@ onMounted(async () => {
       <h2 class="text-3xl font-bold text-green-500 mb-6 text-center">
         Browse Jobs
       </h2>
+      <!-- Show loading spinner while state.isLoading is true -->
+      <div v-if="state.isLoading" class="text-center text-gray-500 py-6">
+        <PulseLoader />
+      </div>
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Show job listings when state.jobs is ready/data has finished fetching from API -->
+
         <!-- Display each job until we've hit our 'limit', as defined above
         If limit is truthy, use it, otherwise show all jobs -->
         <JobListing
