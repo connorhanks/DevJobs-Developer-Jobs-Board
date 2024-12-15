@@ -9,10 +9,12 @@
     "preview": "vite preview",
     "test:unit": "vitest",
     "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
-    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'"
+    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
+    "server": "json-server --watch src/jobs.json --port 5000"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
+    "json-server": "^1.0.0-beta.3",
     "pinia": "^2.2.6",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
