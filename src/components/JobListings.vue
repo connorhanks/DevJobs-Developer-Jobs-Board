@@ -54,9 +54,8 @@ onMounted(async () => {
         <PulseLoader />
       </div>
 
+      <!-- Show job listings when state.jobs is ready/data has finished fetching from API -->
       <div v-else class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Show job listings when state.jobs is ready/data has finished fetching from API -->
-
         <!-- Display each job until we've hit our 'limit', as defined above
         If limit is truthy, use it, otherwise show all jobs -->
         <JobListing
