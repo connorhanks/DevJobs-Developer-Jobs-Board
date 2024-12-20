@@ -2,6 +2,8 @@
 import { reactive, onMounted } from "vue";
 import { useRoute, RouterLink } from "vue-router";
 
+import BackButton from "@/components/BackButton.vue";
+
 import PulseLoader from "vue-spinner/src/PulseLoader.vue";
 
 const route = useRoute();
@@ -37,6 +39,8 @@ onMounted(async () => {
 </script>
 
 <template>
+  <BackButton />
+
   <!-- Show loading spinner while state.isLoading is true/data hasn't been fetched yet -->
   <div v-if="state.isLoading" class="text-center text-gray-500 py-6">
     <PulseLoader />
@@ -105,10 +109,10 @@ onMounted(async () => {
           <!-- Manage -->
           <div class="bg-white p-6 rounded-lg shadow-md mt-6">
             <h3 class="text-xl font-bold mb-6">Manage Job</h3>
-            <a
-              href="add-job.html"
+            <RouterLink
+              :to="`/jobs/edit/${state.job.id}`"
               class="bg-green-500 hover:bg-green-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
-              >Edit Job</a
+              >Edit Job</RouterLink
             >
             <button
               class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
