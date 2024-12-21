@@ -16,7 +16,7 @@ const state = reactive({
 
 // GET request to backend to retrieve jobs data
 async function getJobsDataById() {
-  const url = `http://localhost:5000/jobs/${jobId}`;
+  const url = `/api/jobs/${jobId}`;
   try {
     const response = await fetch(url);
     if (!response.ok) {

@@ -1,7 +1,4 @@
-import {
-  fileURLToPath,
-  URL,
-} from "node:url";
+import { fileURLToPath, URL } from "node:url";
 
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
@@ -12,15 +9,18 @@ export default defineConfig({
   plugins: [vue(), vueDevTools()],
   server: {
     port: 3000,
+    proxy: {
+      "/api": {
+        target: "http://localhost:5000",
+        changeOrigin: true,
+        // ^ = begins with | \ = esc
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
   },
   resolve: {
     alias: {
-      "@": fileURLToPath(
-        new URL(
-          "./src",
-          import.meta.url
-        )
-      ),
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
 });
