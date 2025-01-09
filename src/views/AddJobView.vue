@@ -1,6 +1,7 @@
 <script setup>
 import { reactive } from "vue";
 import { useRouter } from "vue-router";
+import { useToast } from "vue-toastification";
 
 const router = useRouter();
 
@@ -33,6 +34,8 @@ const handleSubmit = async () => {
     },
   };
 
+  const toast = useToast();
+
   try {
     const response = await fetch("/api/jobs", {
       method: "POST",
@@ -42,23 +45,13 @@ const handleSubmit = async () => {
       body: JSON.stringify(newJob),
     });
 
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
-    }
-
     const data = await response.json();
-    console.log("Response data:", data); // Debug the response
+    const jobId = data.id;
 
-    // Adjust this based on your actual response structure
-    const jobId = data.id; // or data.jobId, depending on your API response
-
-    // todo: show toast
+    toast.success("Job added successfully");
     router.push(`/jobs/${jobId}`);
   } catch (error) {
-    console.error(`Error creating job:`, error);
-    // Remove these as they're not defined in this scope
-    // console.log("resp obj:", resp);
-    // console.log("resp obj:", response);
+    toast.error("Failed to add job:", error);
   }
 };
 </script>
