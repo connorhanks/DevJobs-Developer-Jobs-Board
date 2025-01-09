@@ -63,7 +63,7 @@ const handleSubmit = async () => {
   }
 };
 
-onMounted(async () => {
+const fetchJobDetails = async () => {
   const url = `/api/jobs/${jobId}`;
   try {
     const response = await fetch(url);
@@ -88,7 +88,9 @@ onMounted(async () => {
     // so spinner animation knows when to stop
     state.isLoading = false;
   }
-});
+};
+
+onMounted(fetchJobDetails);
 </script>
 
 <template>
