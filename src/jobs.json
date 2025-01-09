@@ -83,6 +83,132 @@
         "contactEmail": "jobs@clydetech.co.uk",
         "contactPhone": "0141-678-9012"
       }
+    },
+    {
+      "id": "7",
+      "type": "Internship",
+      "title": "Frontend Development Intern",
+      "description": "Exciting opportunity for a passionate developer to start their career in web development. Work alongside experienced developers on real client projects.\n\nWhat You'll Learn:\n- Vue.js fundamentals and best practices\n- Modern JavaScript development\n- Git version control\n- Agile development practices\n- Testing methodologies\n\nRequirements:\n- Computer Science degree (ongoing or recent graduate)\n- Basic JavaScript knowledge\n- Eager to learn and grow\n- Good problem-solving skills\n\nBenefits:\n- Paid internship\n- Mentorship program\n- Potential for full-time position\n- Modern office environment\n- Regular feedback sessions",
+      "salary": "£20K - £30K",
+      "location": "Cambridge, UK",
+      "company": {
+        "name": "Tech Futures Lab",
+        "description": "Tech Futures Lab is an innovative technology company focused on nurturing new talent in the tech industry. We provide a supportive environment for learning and growth while working on cutting-edge projects.",
+        "contactEmail": "interns@techfutures.co.uk",
+        "contactPhone": "01223-789-012"
+      }
+    },
+    {
+      "id": "8",
+      "type": "Full-Time",
+      "title": "Senior Vue.js Architect",
+      "description": "Looking for an experienced Vue.js Architect to lead our frontend development team and shape our technical direction.\n\nKey Responsibilities:\n- Architecture design and implementation\n- Performance optimization\n- Team mentorship and leadership\n- Code review and quality assurance\n- Technical documentation\n\nRequired Skills:\n- 8+ years of frontend development\n- 4+ years Vue.js experience\n- Strong system design skills\n- Team leadership experience\n- CI/CD expertise\n\nBenefits:\n- Competitive salary\n- Stock options\n- Private healthcare\n- Remote working options\n- Learning budget",
+      "salary": "£90K - £100K",
+      "location": "Oxford, UK",
+      "company": {
+        "name": "Innovation Stack",
+        "description": "Innovation Stack builds enterprise-level applications for Fortune 500 companies. We're known for our technical excellence and innovative solutions to complex problems.",
+        "contactEmail": "careers@innovationstack.co.uk",
+        "contactPhone": "01865-345-678"
+      }
+    },
+    {
+      "id": "9",
+      "type": "Part-Time",
+      "title": "Vue.js Consultant",
+      "description": "Seeking an experienced Vue.js developer for a part-time consulting role, working with various clients on project-based work.\n\nResponsibilities:\n- Technical consultation\n- Code review and optimization\n- Best practice implementation\n- Client communication\n- Documentation\n\nRequired Experience:\n- 5+ years Vue.js development\n- Strong communication skills\n- Project management experience\n- Client-facing experience\n\nBenefits:\n- Flexible hours\n- Remote work options\n- Competitive day rate\n- Project variety\n- Professional development",
+      "salary": "£60K - £70K",
+      "location": "Bristol, UK",
+      "company": {
+        "name": "Consulting Plus Digital",
+        "description": "Consulting Plus Digital provides expert technical consulting services to businesses across the UK. We pride ourselves on delivering high-quality solutions and technical expertise to our clients.",
+        "contactEmail": "jobs@consultingplus.co.uk",
+        "contactPhone": "0117-901-2345"
+      }
+    },
+    {
+      "id": "10",
+      "type": "Full-Time",
+      "title": "Full Stack Vue Developer",
+      "description": "Join our cross-functional team building modern web applications with Vue.js frontend and Node.js backend.\n\nTechnical Requirements:\n- Vue.js and Nuxt.js expertise\n- Node.js and Express.js\n- MongoDB/PostgreSQL\n- AWS/Azure cloud services\n- Testing frameworks\n\nWhat We're Looking For:\n- 3+ years full stack experience\n- Strong problem-solving skills\n- Team player mindset\n- DevOps knowledge\n\nBenefits:\n- Flexible working hours\n- Health insurance\n- Regular team events\n- Learning budget\n- City center office",
+      "salary": "£50K - £60K",
+      "location": "Newcastle, UK",
+      "company": {
+        "name": "Northern Code Labs",
+        "description": "Northern Code Labs specializes in building scalable web applications for businesses across Europe. We focus on using cutting-edge technology while maintaining high code quality and developer satisfaction.",
+        "contactEmail": "hiring@northerncode.co.uk",
+        "contactPhone": "0191-456-7890"
+      }
+    },
+    {
+      "id": "11",
+      "type": "Remote",
+      "title": "DevOps Engineer (Vue Stack)",
+      "description": "Join our platform team to build and maintain our CI/CD pipelines and cloud infrastructure for Vue.js applications.\n\nKey Responsibilities:\n- Maintain CI/CD pipelines\n- Cloud infrastructure management\n- Performance monitoring\n- Security implementation\n- Developer tooling\n\nRequired Skills:\n- 3+ years DevOps experience\n- AWS/Azure expertise\n- Docker and Kubernetes\n- Vue.js understanding\n- Security best practices\n\nBenefits:\n- Fully remote position\n- Flexible hours\n- Latest equipment provided\n- Learning allowance\n- Regular team meetups",
+      "salary": "£70K - £80K",
+      "location": "Remote, UK",
+      "company": {
+        "name": "Cloud Ops Solutions",
+        "description": "Cloud Ops Solutions specializes in DevOps and cloud infrastructure management. We help companies optimize their development workflows and cloud resources while maintaining high security standards.",
+        "contactEmail": "careers@cloudops-solutions.co.uk",
+        "contactPhone": "020-8901-2345"
+      }
+    },
+    {
+      "id": "12",
+      "type": "Full-Time",
+      "title": "Mid-Level Vue Developer",
+      "description": "Looking for a mid-level Vue.js developer to join our product team working on our SaaS platform.\n\nResponsibilities:\n- Feature development\n- Bug fixing and maintenance\n- Code review\n- Technical documentation\n- Team collaboration\n\nRequired Skills:\n- 2-4 years Vue.js experience\n- TypeScript proficiency\n- Testing experience\n- Git workflow\n- Agile methodology\n\nBenefits:\n- Hybrid working model\n- Health insurance\n- Gym membership\n- Training budget\n- Regular social events",
+      "salary": "£40K - £50K",
+      "location": "Reading, UK",
+      "company": {
+        "name": "Digital Thames Valley",
+        "description": "Digital Thames Valley creates innovative SaaS solutions for the finance sector. We combine technical excellence with a great working environment to deliver outstanding results.",
+        "contactEmail": "jobs@digitalthamesvalley.co.uk",
+        "contactPhone": "0118-567-8901"
+      }
+    },
+    {
+      "id": "13",
+      "type": "Full-Time",
+      "title": "UI/UX Developer (Vue.js)",
+      "description": "Seeking a UI/UX Developer with strong Vue.js skills to create beautiful and intuitive user interfaces.\n\nKey Responsibilities:\n- Frontend implementation\n- UI/UX prototyping\n- Component library maintenance\n- Design system implementation\n- Cross-browser testing\n\nRequired Skills:\n- 3+ years Vue.js experience\n- Strong design sensibility\n- CSS/SASS expertise\n- Figma proficiency\n- Animation skills\n\nBenefits:\n- Creative environment\n- Latest design tools\n- Flexible hours\n- City centre location\n- Professional development",
+      "salary": "£50K - £60K",
+      "location": "Brighton, UK",
+      "company": {
+        "name": "Coastal Design Co",
+        "description": "Coastal Design Co is a creative digital agency specializing in user interface design and development. We create beautiful, functional websites and applications for clients worldwide.",
+        "contactEmail": "hello@coastaldesign.co.uk",
+        "contactPhone": "01273-234-5678"
+      }
+    },
+    {
+      "id": "14",
+      "type": "Part-Time",
+      "title": "Vue.js Mentor",
+      "description": "Experienced Vue.js developer needed to mentor junior developers and conduct code reviews part-time.\n\nResponsibilities:\n- Code review and feedback\n- Technical mentoring\n- Best practice guidance\n- Learning path creation\n- Workshop facilitation\n\nRequired Skills:\n- 5+ years Vue.js experience\n- Strong communication skills\n- Teaching ability\n- Pattern recognition\n- Documentation skills\n\nBenefits:\n- Flexible schedule\n- Remote options\n- Competitive hourly rate\n- Learning resources\n- Community events",
+      "salary": "£40K - £50K",
+      "location": "Sheffield, UK",
+      "company": {
+        "name": "Dev Mentors UK",
+        "description": "Dev Mentors UK provides technical mentoring and training services to development teams across the UK. We help companies level up their development practices through expert guidance.",
+        "contactEmail": "join@devmentors.co.uk",
+        "contactPhone": "0114-789-0123"
+      }
+    },
+    {
+      "id": "15",
+      "type": "Full-Time",
+      "title": "Vue Performance Specialist",
+      "description": "Join our team as a Vue.js Performance Specialist to optimize and enhance our enterprise applications.\n\nKey Responsibilities:\n- Application performance auditing\n- Bundle size optimization\n- Memory leak detection and fixes\n- Runtime performance improvements\n- Performance monitoring implementation\n\nRequired Skills:\n- 4+ years Vue.js experience\n- Deep understanding of Vue internals\n- Chrome DevTools proficiency\n- Webpack/Vite optimization experience\n- Performance testing expertise\n\nBenefits:\n- 4-day work week\n- Remote-first culture\n- High-spec development machine\n- Conference speaking opportunities\n- Performance bonus scheme",
+      "salary": "£70K - £80K",
+      "location": "Cardiff, UK",
+      "company": {
+        "name": "Performance Plus Digital",
+        "description": "Performance Plus Digital specializes in optimizing web applications for enterprise clients. We're passionate about creating fast, efficient, and scalable applications that provide exceptional user experiences.",
+        "contactEmail": "careers@performanceplus.co.uk",
+        "contactPhone": "029-2234-5678"
+      }
     }
   ]
 }

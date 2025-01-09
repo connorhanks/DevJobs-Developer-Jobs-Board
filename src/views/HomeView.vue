@@ -5,10 +5,11 @@ import JobListings from "@/components/JobListings.vue";
 </script>
 
 <template>
-  <Hero
-    title="Let's get you hired."
-    subtitle="Find the developer role that's right for you."
-  />
-  <HomeCards />
-  <JobListings :limit="3" :show-button="true" />
+  <div class="min-h-screen bg-blue-50">
+    <Hero />
+    <div class="container mx-auto px-4 -mt-20">
+      <HomeCards />
+      <JobListings :limit="6" :show-button="true" :is-featured="true" />
+    </div>
+  </div>
 </template>

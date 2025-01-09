@@ -29,7 +29,7 @@ const truncatedDescription = computed(() => {
 </script>
 
 <template>
-  <div class="card p-6 hover:scale-[1.02] transition-transform duration-300">
+  <div class="card p-6 transition-colors duration-200 hover:bg-gray-50">
     <div class="flex items-start justify-between">
       <div>
         <span

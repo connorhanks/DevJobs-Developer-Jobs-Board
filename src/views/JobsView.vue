@@ -3,5 +3,7 @@ import JobListings from "@/components/JobListings.vue";
 </script>
 
 <template>
-  <JobListings />
+  <div class="min-h-screen bg-blue-50">
+    <JobListings :is-featured="false" />
+  </div>
 </template>

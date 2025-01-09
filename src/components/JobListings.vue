@@ -5,10 +5,13 @@ import PulseLoader from "vue-spinner/src/PulseLoader.vue";
 
 import JobListing from "@/components/JobListing.vue";
 
-// Used for setting max number of jobs to display on-load
 defineProps({
   limit: Number,
   showButton: {
+    type: Boolean,
+    default: false,
+  },
+  isFeatured: {
     type: Boolean,
     default: false,
   },
@@ -19,7 +22,6 @@ const state = reactive({
   isLoading: true,
 });
 
-// GET request to backend to retrieve jobs data
 async function getJobsData() {
   const url = "/api/jobs";
   try {
@@ -33,7 +35,6 @@ async function getJobsData() {
   } catch (error) {
     console.error("Error fetching jobs:", error.message);
   } finally {
-    // so spinner animation knows when to stop
     state.isLoading = false;
   }
 }
@@ -44,37 +45,48 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section class="bg-blue-50 px-4 py-10">
+  <section class="py-16">
     <div class="container-xl lg:container m-auto">
-      <h2 class="text-3xl font-bold text-blue-600 mb-6 text-center">
-        Browse Jobs
-      </h2>
-      <!-- Show loading spinner while state.isLoading is true -->
-      <div v-if="state.isLoading" class="text-center text-gray-500 py-6">
-        <PulseLoader color="#3B82F6" />
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">
+          {{ isFeatured ? "Featured Positions" : "All Available Jobs" }}
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          {{
+            isFeatured
+              ? "Browse through our latest developer opportunities. Find roles that match your experience and career goals."
+              : "Explore all our current openings. From junior to senior positions, find your perfect role."
+          }}
+        </p>
       </div>
 
-      <!-- Show job listings when state.jobs is ready/data has finished fetching from API -->
-      <div v-else class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Display each job until we've hit our 'limit', as defined above
-        If limit is truthy, use it, otherwise show all jobs -->
+      <!-- Loading State -->
+      <div
+        v-if="state.isLoading"
+        class="flex justify-center items-center py-20"
+      >
+        <PulseLoader color="#2563EB" />
+      </div>
+
+      <!-- Job Listings Grid -->
+      <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <JobListing
-          v-for="(job, index) in state.jobs.slice(
-            0,
-            limit || state.jobs.length
-          )"
+          v-for="job in state.jobs.slice(0, limit || state.jobs.length)"
           :key="job.id"
           :job="job"
         />
       </div>
-    </div>
-  </section>
 
-  <section v-if="showButton" class="m-auto max-w-lg my-10 px-6">
-    <RouterLink
-      to="/jobs"
-      class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
-      >View All Jobs</RouterLink
-    >
+      <!-- View All Button -->
+      <div v-if="showButton && !state.isLoading" class="mt-12 text-center">
+        <RouterLink
+          to="/jobs"
+          class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition md:py-4 md:text-lg md:px-10"
+        >
+          View All Positions
+          <i class="fas fa-arrow-right ml-2"></i>
+        </RouterLink>
+      </div>
+    </div>
   </section>
 </template>
