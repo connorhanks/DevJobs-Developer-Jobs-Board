@@ -64,90 +64,96 @@ onMounted(async () => {
 </script>
 
 <template>
-  <BackButton />
+  <div class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4">
+      <BackButton />
 
-  <!-- Show loading spinner while state.isLoading is true/data hasn't been fetched yet -->
-  <div v-if="state.isLoading" class="text-center text-gray-500 py-6">
-    <PulseLoader />
-  </div>
+      <div v-if="state.isLoading" class="text-center py-8">
+        <PulseLoader />
+      </div>
 
-  <!-- Only show section once state.isLoading is set to true (AKA if the job data with the specific ID has been successfully fetched) -->
-  <section v-else class="bg-green-50">
-    <div class="container m-auto py-10 px-6">
-      <div class="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
-        <main>
-          <div
-            class="bg-white p-6 rounded-lg shadow-md text-center md:text-left"
-          >
-            <div class="text-gray-500 mb-4">{{ state.job.type }}</div>
-            <h1 class="text-3xl font-bold mb-4">{{ state.job.title }}</h1>
-            <div
-              class="text-gray-500 mb-4 flex align-middle justify-center md:justify-start"
+      <div v-else class="grid md:grid-cols-3 gap-6">
+        <!-- Main Content (2 columns) -->
+        <div class="md:col-span-2 space-y-6">
+          <!-- Job Header -->
+          <div class="card p-6">
+            <span
+              class="px-3 py-1 text-xs font-medium rounded-full inline-block"
+              :class="{
+                'bg-blue-100 text-blue-600': state.job.type === 'Full-Time',
+                'bg-pink-100 text-pink-600': state.job.type === 'Part-Time',
+                'bg-purple-100 text-purple-600': state.job.type === 'Remote',
+                'bg-orange-100 text-orange-600':
+                  state.job.type === 'Internship',
+              }"
             >
-              <span class="mdi mdi-map-marker text-orange-500 mr-2"></span>
-              <p class="text-orange-700">{{ state.job.location }}</p>
+              {{ state.job.type }}
+            </span>
+            <h1 class="text-3xl font-bold mt-4">{{ state.job.title }}</h1>
+            <div class="flex items-center mt-4 text-gray-600">
+              <i class="fas fa-location-dot text-pink-500 mr-2"></i>
+              {{ state.job.location }}
             </div>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-md mt-6">
-            <h3 class="text-green-800 text-lg font-bold mb-6">
-              Job Description
-            </h3>
-
-            <div class="mb-4 whitespace-pre-line">
+          <!-- Job Description -->
+          <div class="card p-6">
+            <h3 class="text-xl font-bold mb-4">Job Description</h3>
+            <div class="text-gray-600 whitespace-pre-line mb-6">
               {{ state.job.description }}
             </div>
 
-            <h3 class="text-green-800 text-lg font-bold mb-2">Salary</h3>
-
-            <p class="mb-4">{{ state.job.salary }} / Year</p>
+            <div class="border-t pt-4">
+              <h3 class="text-xl font-bold mb-2">Salary</h3>
+              <p>{{ state.job.salary }} / year</p>
+            </div>
           </div>
-        </main>
+        </div>
 
         <!-- Sidebar -->
-        <aside>
+        <aside class="space-y-6">
           <!-- Company Info -->
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-bold mb-6">Company Info</h3>
-
-            <h2 class="text-2xl">{{ state.job.company.name }}</h2>
-
-            <p class="my-2">
+          <div class="card p-6">
+            <h3 class="text-xl font-bold mb-4">Company Info</h3>
+            <h4 class="text-lg font-semibold">{{ state.job.company.name }}</h4>
+            <p class="text-gray-600 my-4">
               {{ state.job.company.description }}
             </p>
 
-            <hr class="my-4" />
+            <div class="space-y-4">
+              <div>
+                <h5 class="font-medium mb-2">Contact Email:</h5>
+                <p class="bg-gray-50 p-3 rounded">
+                  {{ state.job.company.contactEmail }}
+                </p>
+              </div>
 
-            <h3 class="text-xl">Contact Email:</h3>
-
-            <p class="my-2 bg-green-100 p-2 font-bold">
-              {{ state.job.company.contactEmail }}
-            </p>
-
-            <h3 class="text-xl">Contact Phone:</h3>
-
-            <p class="my-2 bg-green-100 p-2 font-bold">
-              {{ state.job.company.contactPhone }}
-            </p>
+              <div v-if="state.job.company.contactPhone">
+                <h5 class="font-medium mb-2">Contact Phone:</h5>
+                <p class="bg-gray-50 p-3 rounded">
+                  {{ state.job.company.contactPhone }}
+                </p>
+              </div>
+            </div>
           </div>
 
-          <!-- Manage -->
-          <div class="bg-white p-6 rounded-lg shadow-md mt-6">
-            <h3 class="text-xl font-bold mb-6">Manage Job</h3>
-            <RouterLink
-              :to="`/jobs/edit/${state.job.id}`"
-              class="bg-green-500 hover:bg-green-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
-              >Edit Job</RouterLink
-            >
-            <button
-              @click="deleteJob"
-              class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
-            >
-              Delete Job
-            </button>
+          <!-- Manage Job -->
+          <div class="card p-6">
+            <h3 class="text-xl font-bold mb-4">Manage Job</h3>
+            <div class="space-y-3">
+              <RouterLink
+                :to="`/jobs/edit/${state.job.id}`"
+                class="btn-primary block text-center"
+              >
+                Edit Job
+              </RouterLink>
+              <button @click="deleteJob" class="btn-danger block w-full">
+                Delete Job
+              </button>
+            </div>
           </div>
         </aside>
       </div>
     </div>
-  </section>
+  </div>
 </template>

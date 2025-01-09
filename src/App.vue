@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar.vue";
 <template>
   <!-- Navbar will be fixed at top of all pages -->
   <Navbar />
-  <main class="pt-20">
+  <main class="pt-16">
     <RouterView />
   </main>
 </template>
