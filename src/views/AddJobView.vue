@@ -1,5 +1,8 @@
 <script setup>
 import { reactive } from "vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
 
 const form = reactive({
   type: "Full-Time",
@@ -14,6 +17,50 @@ const form = reactive({
     contactPhone: "",
   },
 });
+
+const handleSubmit = async () => {
+  const newJob = {
+    type: form.type,
+    title: form.title,
+    description: form.description,
+    salary: form.salary,
+    location: form.location,
+    company: {
+      name: form.company.name,
+      description: form.company.description,
+      contactEmail: form.company.contactEmail,
+      contactPhone: form.company.contactPhone,
+    },
+  };
+
+  try {
+    const response = await fetch("/api/jobs", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newJob),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log("Response data:", data); // Debug the response
+
+    // Adjust this based on your actual response structure
+    const jobId = data.id; // or data.jobId, depending on your API response
+
+    // todo: show toast
+    router.push(`/jobs/${jobId}`);
+  } catch (error) {
+    console.error(`Error creating job:`, error);
+    // Remove these as they're not defined in this scope
+    // console.log("resp obj:", resp);
+    // console.log("resp obj:", response);
+  }
+};
 </script>
 
 <template>
@@ -22,7 +69,7 @@ const form = reactive({
       <div
         class="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0"
       >
-        <form>
+        <form @submit.prevent="handleSubmit">
           <h2 class="text-3xl text-center font-semibold mb-6">Add Job</h2>
 
           <div class="mb-4">

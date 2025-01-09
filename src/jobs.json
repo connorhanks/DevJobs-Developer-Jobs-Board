@@ -1,7 +1,7 @@
 {
   "jobs": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Senior React Developer",
       "type": "Full-Time",
       "description": "We are seeking a talented React Developer to join our dynamic team in our modern London office, situated in the heart of Tech City. The ideal candidate will lead complex projects and mentor junior developers while working on cutting-edge applications.\n\nTechnical Requirements:\n- 5+ years of experience with React.js and its ecosystem\n- Expert knowledge of JavaScript/TypeScript, HTML5, and CSS3\n- Experience with Redux, React Query, and Next.js\n- Strong understanding of REST APIs and GraphQL\n- Familiarity with testing frameworks (Jest, React Testing Library)\n\nWhat We Offer:\n- Hybrid working model (2 days office, 3 days remote)\n- Annual training budget of £2,000\n- Private healthcare and dental coverage\n- 25 days holiday + bank holidays\n- Regular team social events and hackathons\n\nOur modern office includes standing desks, relaxation areas, and a fully stocked kitchen. We follow agile methodologies and emphasize continuous learning and innovation.",
@@ -15,7 +15,7 @@
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Angular Developer",
       "type": "Part-Time",
       "description": "Looking for a flexible part-time role that allows you to maintain work-life balance while working on exciting projects? Join our Manchester-based team working 20-25 hours per week, with the option to work fully remote.\n\nRequired Skills:\n- 3+ years of Angular experience (version 2+)\n- Strong TypeScript fundamentals\n- Experience with RxJS and NgRx\n- Knowledge of Material Design\n- Unit testing experience with Jasmine/Karma\n\nProject Focus:\n- E-commerce platforms\n- Financial service applications\n- Data visualization dashboards\n\nPerks:\n- Flexible working hours\n- Pro-rata benefits package\n- Quarterly team building events\n- Learning and development opportunities\n\nOur collaborative team structure ensures part-time members are fully integrated into project planning and decision-making processes.",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Full Stack JavaScript Developer",
       "type": "Full-Time",
       "description": "Join our rapidly growing team in Birmingham's Jewellery Quarter, where we're building the next generation of cloud-based enterprise solutions. This role offers a unique opportunity to work across our entire tech stack and influence architectural decisions.\n\nTechnical Requirements:\n- Node.js & Express.js expertise\n- MongoDB and PostgreSQL experience\n- React/Vue.js frontend development\n- AWS/Azure cloud services\n- Docker and Kubernetes knowledge\n\nCurrent Projects:\n- Microservices architecture implementation\n- Real-time data processing systems\n- AI-powered analytics platforms\n\nCompany Culture:\n- Regular knowledge sharing sessions\n- Remote-first approach with optional office days\n- Investment in latest technologies and tools\n- Clear career progression path\n- Regular hackathons and innovation days\n\nBenefits include gym membership, mental health support, and professional development allowance. Our modern office features collaboration spaces, quiet zones, and a game room.",
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "WordPress Developer",
       "type": "Part-Time",
       "description": "Based in Bristol's creative quarter, we're seeking a WordPress expert to join our boutique digital agency. Working in a hybrid capacity, you'll be responsible for creating bespoke WordPress solutions for our diverse client base.\n\nEssential Skills:\n- Advanced PHP development\n- Custom WordPress theme development\n- WooCommerce expertise\n- ACF Pro and Gutenberg block development\n- Performance optimization experience\n\nDay-to-Day Activities:\n- Creating custom plugins\n- Theme customization\n- Security implementation\n- Site optimization and maintenance\n- Client consultation\n\nWork Environment:\n- Flexible 20-hour work week\n- Creative, informal atmosphere\n- Dog-friendly office\n- Regular team lunches\n- Collaborative project approach\n\nWe value work-life balance and offer flexible scheduling to accommodate school runs or other commitments. Our office is easily accessible by public transport and includes bike storage facilities.",
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Python Django Developer",
       "type": "Full-Time",
       "description": "Join our Edinburgh team in developing sophisticated e-commerce solutions using Python and Django. Located in the historic Leith district, we offer a blend of traditional Scottish hospitality with modern tech company culture.\n\nTechnical Requirements:\n- 4+ years Python development experience\n- Strong Django framework knowledge\n- Experience with Django REST framework\n- PostgreSQL and Redis expertise\n- Celery and asynchronous programming\n- Docker containerization\n\nCurrent Projects:\n- AI-powered recommendation engines\n- High-performance payment systems\n- International e-commerce platforms\n\nBenefits:\n- 35 days annual leave\n- Private pension scheme\n- Health insurance\n- Annual ski trip\n- Professional development budget\n\nOur newly renovated office features stunning views of Edinburgh Castle, with dedicated quiet spaces, collaboration areas, and a rooftop garden. We promote a healthy work-life balance and offer flexible working hours.",
@@ -71,7 +71,7 @@
       }
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Ruby on Rails Developer",
       "type": "Full-Time",
       "description": "Be part of Glasgow's thriving tech scene! We're looking for a Ruby on Rails developer to join our passionate team developing innovative solutions for the fintech sector. Our office is located in the vibrant Merchant City area.\n\nRequired Experience:\n- 3+ years Ruby on Rails development\n- SQL and PostgreSQL\n- Frontend skills (JavaScript, HTML5, CSS3)\n- Test-driven development\n- API design and implementation\n\nTechnology Stack:\n- Ruby 3.x and Rails 7\n- React for frontend components\n- Sidekiq for background processing\n- ElasticSearch\n- AWS infrastructure\n\nWhat Sets Us Apart:\n- 4-day work week (32 hours)\n- Remote-first culture\n- Unlimited learning resources\n- Regular international team retreats\n- Commitment to open source\n\nWe believe in sustainable development practices and maintaining a healthy work-life balance. Our modern office includes a meditation room, fully equipped kitchen, and monthly wellness activities.",
@@ -82,6 +82,20 @@
         "description": "Clyde Technologies is a leading technology company specializing in software development and digital marketing. We are committed to providing our clients with cutting-edge solutions and our employees with a supportive and rewarding work environment.",
         "contactEmail": "jobs@clydetech.co.uk",
         "contactPhone": "0141-678-9012"
+      }
+    },
+    {
+      "id": "310e",
+      "type": "Part-Time",
+      "title": "Bruce Aguirre",
+      "description": "Odit tempor aut recu",
+      "salary": "£10K - £20K",
+      "location": "Elit dolor ea et ex",
+      "company": {
+        "name": "Manning Baldwin Trading",
+        "description": "Laboris deleniti imp",
+        "contactEmail": "nujohaw@mailinator.com",
+        "contactPhone": "+1 (423) 372-4538"
       }
     }
   ]
