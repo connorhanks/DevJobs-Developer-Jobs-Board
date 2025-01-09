@@ -2,15 +2,17 @@
 import { reactive } from "vue";
 import { useRouter } from "vue-router";
 import { useToast } from "vue-toastification";
+import BackButton from "@/components/BackButton.vue";
 
 const router = useRouter();
+const toast = useToast();
 
 const form = reactive({
-  type: "Full-Time",
   title: "",
-  description: "",
-  salary: "£0 - £10K",
+  type: "Full-Time",
   location: "",
+  salary: "",
+  description: "",
   company: {
     name: "",
     description: "",
@@ -20,195 +22,185 @@ const form = reactive({
 });
 
 const handleSubmit = async () => {
-  const newJob = {
-    type: form.type,
-    title: form.title,
-    description: form.description,
-    salary: form.salary,
-    location: form.location,
-    company: {
-      name: form.company.name,
-      description: form.company.description,
-      contactEmail: form.company.contactEmail,
-      contactPhone: form.company.contactPhone,
-    },
-  };
-
-  const toast = useToast();
-
   try {
     const response = await fetch("/api/jobs", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newJob),
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
     });
 
-    const data = await response.json();
-    const jobId = data.id;
+    if (!response.ok) throw new Error(`Response status: ${response.status}`);
+    const newJob = await response.json();
 
-    toast.success("Job added successfully");
-    router.push(`/jobs/${jobId}`);
+    toast.success("Job posted successfully");
+    router.push(`/jobs/${newJob.id}`);
   } catch (error) {
-    toast.error("Failed to add job:", error);
+    toast.error("Failed to post job");
+    console.error("Error posting job:", error);
   }
 };
 </script>
 
 <template>
-  <section class="bg-gray-50 pt-4">
-    <div class="container max-w-3xl mx-auto p-6">
-      <div class="card p-8">
-        <h2 class="text-3xl font-bold text-center mb-8 text-blue-600">
-          Post a New Job
-        </h2>
+  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen">
+    <div class="container mx-auto px-4">
+      <BackButton />
 
-        <form @submit.prevent="handleSubmit" class="space-y-6">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Job Type -->
-            <div class="form-group">
-              <label class="block text-sm font-medium text-gray-700 mb-2">
-                Job Type
-              </label>
-              <select v-model="form.type" class="input-field w-full">
-                <option value="Full-Time">Full-Time</option>
-                <option value="Part-Time">Part-Time</option>
-                <option value="Remote">Remote</option>
-                <option value="Internship">Internship</option>
-              </select>
-            </div>
+      <!-- Hero Section -->
+      <div
+        class="relative rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 p-8 md:p-12 mb-8 overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 bg-grid-white/[0.2] bg-[size:20px_20px]"
+        ></div>
+        <div class="relative">
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            Post a New Job
+          </h1>
+          <p class="text-blue-100 text-lg">
+            Create a compelling job listing to attract talented developers to
+            your team.
+          </p>
+        </div>
+      </div>
 
-            <!-- Job Title -->
-            <div class="form-group">
-              <label class="block text-sm font-medium text-gray-700 mb-2">
-                Job Title
-              </label>
-              <input
-                type="text"
-                v-model="form.title"
-                class="input-field w-full"
-                placeholder="e.g. Senior Vue Developer"
-                required
-              />
-            </div>
+      <!-- Form Section -->
+      <div class="mx-auto">
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+          <form @submit.prevent="handleSubmit" class="space-y-8">
+            <!-- Job Details Section -->
+            <div>
+              <h2 class="text-2xl font-bold text-gray-900 mb-6">Job Details</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="form-group">
+                  <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Job Title
+                  </label>
+                  <input
+                    v-model="form.title"
+                    type="text"
+                    class="input-field w-full"
+                    required
+                  />
+                </div>
 
-            <!-- Salary -->
-            <div class="form-group">
-              <label class="block text-sm font-medium text-gray-700 mb-2">
-                Salary Range
-              </label>
-              <select v-model="form.salary" class="input-field w-full">
-                <option value="£0 - £10K">£0 - £10K</option>
-                <option value="£10K - £20K">£10K - £20K</option>
-                <option value="£20K - £30K">£20K - £30K</option>
-                <option value="£30K - £40K">£30K - £40K</option>
-                <option value="£40K - £50K">£40K - £50K</option>
-                <option value="£50K - £60K">£50K - £60K</option>
-                <option value="£60K - £70K">£60K - £70K</option>
-                <option value="£70K - £80K">£70K - £80K</option>
-                <option value="£80K - £90K">£80K - £90K</option>
-                <option value="£90K - £100K">£90K - £100K</option>
-                <option value="£100K+">£100K+</option>
-              </select>
-            </div>
+                <div class="form-group">
+                  <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Job Type
+                  </label>
+                  <select v-model="form.type" class="input-field w-full">
+                    <option value="Full-Time">Full-Time</option>
+                    <option value="Part-Time">Part-Time</option>
+                    <option value="Remote">Remote</option>
+                    <option value="Internship">Internship</option>
+                  </select>
+                </div>
 
-            <!-- Location -->
-            <div class="form-group">
-              <label class="block text-sm font-medium text-gray-700 mb-2">
-                Location
-              </label>
-              <input
-                type="text"
-                v-model="form.location"
-                class="input-field w-full"
-                placeholder="e.g. London, UK"
-                required
-              />
-            </div>
-          </div>
+                <div class="form-group">
+                  <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Location
+                  </label>
+                  <input
+                    v-model="form.location"
+                    type="text"
+                    class="input-field w-full"
+                    required
+                  />
+                </div>
 
-          <!-- Job Description -->
-          <div class="form-group">
-            <label class="block text-sm font-medium text-gray-700 mb-2">
-              Job Description
-            </label>
-            <textarea
-              v-model="form.description"
-              rows="4"
-              class="input-field w-full"
-              placeholder="Describe the role, requirements, benefits, etc."
-              required
-            ></textarea>
-          </div>
+                <div class="form-group">
+                  <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Salary
+                  </label>
+                  <input
+                    v-model="form.salary"
+                    type="text"
+                    class="input-field w-full"
+                    required
+                  />
+                </div>
+              </div>
 
-          <!-- Company Information -->
-          <div class="border-t pt-6 mt-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-4">
-              Company Information
-            </h3>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <!-- Company Name -->
-              <div class="form-group">
+              <div class="mt-6">
                 <label class="block text-sm font-medium text-gray-700 mb-2">
-                  Company Name
+                  Job Description
                 </label>
-                <input
-                  type="text"
-                  v-model="form.company.name"
+                <textarea
+                  v-model="form.description"
+                  rows="6"
                   class="input-field w-full"
-                  placeholder="Your company name"
                   required
-                />
-              </div>
-
-              <!-- Contact Email -->
-              <div class="form-group">
-                <label class="block text-sm font-medium text-gray-700 mb-2">
-                  Contact Email
-                </label>
-                <input
-                  type="email"
-                  v-model="form.company.contactEmail"
-                  class="input-field w-full"
-                  placeholder="email@company.com"
-                  required
-                />
-              </div>
-
-              <!-- Contact Phone -->
-              <div class="form-group">
-                <label class="block text-sm font-medium text-gray-700 mb-2">
-                  Contact Phone
-                </label>
-                <input
-                  type="tel"
-                  v-model="form.company.contactPhone"
-                  class="input-field w-full"
-                  placeholder="Optional phone number"
-                />
+                ></textarea>
               </div>
             </div>
 
-            <!-- Company Description -->
-            <div class="form-group mt-6">
-              <label class="block text-sm font-medium text-gray-700 mb-2">
-                Company Description
-              </label>
-              <textarea
-                v-model="form.company.description"
-                rows="3"
-                class="input-field w-full"
-                placeholder="Tell us about your company"
-                required
-              ></textarea>
-            </div>
-          </div>
+            <!-- Company Details Section -->
+            <div>
+              <h2 class="text-2xl font-bold text-gray-900 mb-6">
+                Company Information
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="form-group">
+                  <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Company Name
+                  </label>
+                  <input
+                    v-model="form.company.name"
+                    type="text"
+                    class="input-field w-full"
+                    required
+                  />
+                </div>
 
-          <button type="submit" class="btn-primary w-full">Post Job</button>
-        </form>
+                <div class="form-group">
+                  <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Contact Email
+                  </label>
+                  <input
+                    v-model="form.company.contactEmail"
+                    type="email"
+                    class="input-field w-full"
+                    required
+                  />
+                </div>
+
+                <div class="form-group md:col-span-2">
+                  <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Contact Phone (Optional)
+                  </label>
+                  <input
+                    v-model="form.company.contactPhone"
+                    type="tel"
+                    class="input-field w-full"
+                  />
+                </div>
+
+                <div class="form-group md:col-span-2">
+                  <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Company Description
+                  </label>
+                  <textarea
+                    v-model="form.company.description"
+                    rows="4"
+                    class="input-field w-full"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="flex justify-end">
+              <button
+                type="submit"
+                class="bg-blue-600 text-white px-8 py-3 rounded-xl font-medium hover:bg-blue-700 transition-colors duration-200"
+              >
+                Post Job
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
