@@ -155,18 +155,18 @@
       }
     },
     {
-      "id": "12",
       "type": "Full-Time",
       "title": "Mid-Level Vue Developer",
       "description": "Looking for a mid-level Vue.js developer to join our product team working on our SaaS platform.\n\nResponsibilities:\n- Feature development\n- Bug fixing and maintenance\n- Code review\n- Technical documentation\n- Team collaboration\n\nRequired Skills:\n- 2-4 years Vue.js experience\n- TypeScript proficiency\n- Testing experience\n- Git workflow\n- Agile methodology\n\nBenefits:\n- Hybrid working model\n- Health insurance\n- Gym membership\n- Training budget\n- Regular social events",
-      "salary": "£40K - £50K",
+      "salary": "£50K - £60K",
       "location": "Reading, UK",
       "company": {
         "name": "Digital Thames Valley",
         "description": "Digital Thames Valley creates innovative SaaS solutions for the finance sector. We combine technical excellence with a great working environment to deliver outstanding results.",
         "contactEmail": "jobs@digitalthamesvalley.co.uk",
         "contactPhone": "0118-567-8901"
-      }
+      },
+      "id": "12"
     },
     {
       "id": "13",
