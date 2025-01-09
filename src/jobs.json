@@ -15,18 +15,18 @@
       "id": "1"
     },
     {
-      "id": "2",
-      "title": "Angular Developer",
       "type": "Part-Time",
+      "title": "Angular Developer",
       "description": "Looking for a flexible part-time role that allows you to maintain work-life balance while working on exciting projects? Join our Manchester-based team working 20-25 hours per week, with the option to work fully remote.\n\nRequired Skills:\n- 3+ years of Angular experience (version 2+)\n- Strong TypeScript fundamentals\n- Experience with RxJS and NgRx\n- Knowledge of Material Design\n- Unit testing experience with Jasmine/Karma\n\nProject Focus:\n- E-commerce platforms\n- Financial service applications\n- Data visualization dashboards\n\nPerks:\n- Flexible working hours\n- Pro-rata benefits package\n- Quarterly team building events\n- Learning and development opportunities\n\nOur collaborative team structure ensures part-time members are fully integrated into project planning and decision-making processes.",
-      "location": "Manchester, UK",
       "salary": "£30K - £40K",
+      "location": "Manchester, UK",
       "company": {
         "name": "Northern Tech Labs",
         "description": "Northern Tech Labs is a creative agency specializing in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation to deliver exceptional results for our clients.",
         "contactEmail": "jobs@northerntech.co.uk",
         "contactPhone": "0161-234-5678"
-      }
+      },
+      "id": "2"
     },
     {
       "id": "3",
