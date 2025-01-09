@@ -39,18 +39,22 @@ async function getJobsDataById() {
 
 const deleteJob = async () => {
   try {
-    const response = await fetch(`/api/jobs/${jobId}`, {
-      method: "DELETE",
-    });
+    const confirm = window.confirm("Are you sure you want to delete this job?");
 
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
+    if (confirm) {
+      const response = await fetch(`/api/jobs/${jobId}`, {
+        method: "DELETE",
+      });
+
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+
+      toast.success("Job deleted successfully");
+      router.push("/jobs");
     }
-
-    toast.success("Job deleted successfully");
-    router.push("/jobs");
   } catch (error) {
-    toast.error(`Failed to delete job with id: ${jobId}`, error);
+    toast.error(`Failed to delete job with id ${jobId}:`, error);
   }
 };
 
