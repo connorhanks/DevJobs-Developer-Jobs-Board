@@ -71,7 +71,7 @@ Before you begin, ensure you have the following installed:
 - **API Integration:** Asynchronous data fetching with error handling
 - **Form Handling:** Complex form implementations with validation
 - **Responsive Design:** Mobile-first approach using Tailwind CSS
-- **User Experience:** Loading states, notifications, and smooth transitions
+- **User Experience:** Loading states, notifications and smooth transitions
 
 ## 🔧 Development
 
