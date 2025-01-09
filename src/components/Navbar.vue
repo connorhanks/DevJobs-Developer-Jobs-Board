@@ -1,21 +1,37 @@
 <template>
-  <nav class="bg-blue-700 fixed top-0 left-0 right-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
+  <nav
+    class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-blue-600 to-indigo-600"
+  >
+    <!-- Grid overlay pattern -->
+    <div class="absolute inset-0 bg-grid-white/[0.2] bg-[size:20px_20px]"></div>
+
+    <!-- Decorative corner gradient -->
+    <div
+      class="absolute top-0 right-0 w-32 h-full bg-gradient-to-bl from-white/[0.07] to-transparent"
+    ></div>
+    <div
+      class="absolute top-0 left-0 w-32 h-full bg-gradient-to-br from-white/[0.07] to-transparent"
+    ></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-24">
         <RouterLink to="/" class="flex items-center space-x-3">
-          <span class="text-white font-bold text-xl">DevJobs</span>
+          <div class="p-2.5 rounded-lg bg-white/10 backdrop-blur-sm">
+            <i class="mdi mdi-code-tags text-white text-2xl"></i>
+          </div>
+          <span class="text-white font-bold text-2xl">DevJobs</span>
         </RouterLink>
 
-        <div class="flex space-x-1">
+        <div class="flex space-x-2">
           <RouterLink
             v-for="(link, index) in navLinks"
             :key="index"
             :to="link.to"
             :class="[
               isActiveLink(link.to)
-                ? 'bg-blue-800 text-white'
-                : 'text-blue-100 hover:bg-blue-800',
-              'px-4 py-2 rounded-lg transition-colors duration-200 font-medium',
+                ? 'bg-white/20 text-white'
+                : 'text-blue-100 hover:bg-white/10',
+              'px-5 py-2.5 rounded-lg transition-all duration-200 font-medium backdrop-blur-sm border border-white/10 hover:border-white/20',
             ]"
           >
             {{ link.text }}

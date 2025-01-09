@@ -27,25 +27,30 @@ import { RouterLink } from "vue-router";
     </div>
 
     <div
-      class="bg-blue-600 rounded-xl shadow-lg p-8 transform hover:-translate-y-1 transition"
+      class="relative rounded-xl shadow-lg p-8 transform hover:-translate-y-1 transition overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-600"
     >
-      <div class="flex items-start mb-4">
-        <div class="px-2.5 py-2 bg-blue-500 rounded-lg">
-          <span class="mdi mdi-office-building text-white text-xl"></span>
+      <div
+        class="absolute inset-0 bg-grid-white/[0.2] bg-[size:20px_20px]"
+      ></div>
+      <div class="relative">
+        <div class="flex items-start mb-4">
+          <div class="px-2.5 py-2 bg-white/20 backdrop-blur-sm rounded-lg">
+            <span class="mdi mdi-office-building text-white text-xl"></span>
+          </div>
         </div>
+        <h2 class="text-2xl font-bold text-white mb-4">For Employers</h2>
+        <p class="text-blue-100 mb-6">
+          Post your job listings and reach thousands of talented Vue.js
+          developers ready for their next opportunity.
+        </p>
+        <RouterLink
+          to="/jobs/add"
+          class="inline-flex items-center text-white font-semibold hover:text-blue-200"
+        >
+          Post a Job
+          <span class="mdi mdi-arrow-right ml-2"></span>
+        </RouterLink>
       </div>
-      <h2 class="text-2xl font-bold text-white mb-4">For Employers</h2>
-      <p class="text-blue-100 mb-6">
-        Post your job listings and reach thousands of talented Vue.js developers
-        ready for their next opportunity.
-      </p>
-      <RouterLink
-        to="/jobs/add"
-        class="inline-flex items-center text-white font-semibold hover:text-blue-200"
-      >
-        Post a Job
-        <span class="mdi mdi-arrow-right ml-2"></span>
-      </RouterLink>
     </div>
   </div>
 </template>

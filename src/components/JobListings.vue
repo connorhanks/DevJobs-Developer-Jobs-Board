@@ -84,7 +84,9 @@ onMounted(async () => {
           class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition md:py-4 md:text-lg md:px-10"
         >
           View All Positions
-          <i class="fas fa-arrow-right ml-2"></i>
+          <i
+            class="mdi mdi-arrow-right ml-2 transition-transform duration-200 group-hover:translate-x-0.5"
+          ></i>
         </RouterLink>
       </div>
     </div>

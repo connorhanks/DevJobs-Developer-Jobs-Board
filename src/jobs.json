@@ -4,7 +4,7 @@
       "title": "Senior React Developer",
       "type": "Full-Time",
       "location": "London, UK",
-      "salary": "£90K - £100K",
+      "salary": "£90,000 - £100,000",
       "description": "We are seeking a talented React Developer to join our dynamic team in our modern London office, situated in the heart of Tech City. The ideal candidate will lead complex projects and mentor junior developers while working on cutting-edge applications.\n\nTechnical Requirements:\n- 5+ years of experience with React.js and its ecosystem\n- Expert knowledge of JavaScript/TypeScript, HTML5, and CSS3\n- Experience with Redux, React Query, and Next.js\n- Strong understanding of REST APIs and GraphQL\n- Familiarity with testing frameworks (Jest, React Testing Library)\n\nWhat We Offer:\n- Hybrid working model (2 days office, 3 days remote)\n- Annual training budget of £2,000\n- Private healthcare and dental coverage\n- 25 days holiday + bank holidays\n- Regular team social events and hackathons\n\nOur modern office includes standing desks, relaxation areas, and a fully stocked kitchen. We follow agile methodologies and emphasize continuous learning and innovation.",
       "company": {
         "name": "Pixel Bridge Digital",
@@ -15,11 +15,11 @@
       "id": "1"
     },
     {
-      "type": "Part-Time",
       "title": "Angular Developer",
-      "description": "Looking for a flexible part-time role that allows you to maintain work-life balance while working on exciting projects? Join our Manchester-based team working 20-25 hours per week, with the option to work fully remote.\n\nRequired Skills:\n- 3+ years of Angular experience (version 2+)\n- Strong TypeScript fundamentals\n- Experience with RxJS and NgRx\n- Knowledge of Material Design\n- Unit testing experience with Jasmine/Karma\n\nProject Focus:\n- E-commerce platforms\n- Financial service applications\n- Data visualization dashboards\n\nPerks:\n- Flexible working hours\n- Pro-rata benefits package\n- Quarterly team building events\n- Learning and development opportunities\n\nOur collaborative team structure ensures part-time members are fully integrated into project planning and decision-making processes.",
-      "salary": "£50K - £60K",
+      "type": "Part-Time",
       "location": "Manchester, UK",
+      "salary": "£40,000 - £50,000",
+      "description": "Looking for a flexible part-time role that allows you to maintain work-life balance while working on exciting projects? Join our Manchester-based team working 20-25 hours per week, with the option to work fully remote.\n\nRequired Skills:\n- 3+ years of Angular experience (version 2+)\n- Strong TypeScript fundamentals\n- Experience with RxJS and NgRx\n- Knowledge of Material Design\n- Unit testing experience with Jasmine/Karma\n\nProject Focus:\n- E-commerce platforms\n- Financial service applications\n- Data visualization dashboards\n\nPerks:\n- Flexible working hours\n- Pro-rata benefits package\n- Quarterly team building events\n- Learning and development opportunities\n\nOur collaborative team structure ensures part-time members are fully integrated into project planning and decision-making processes.",
       "company": {
         "name": "Northern Tech Labs",
         "description": "Northern Tech Labs is a creative agency specializing in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation to deliver exceptional results for our clients.",
@@ -34,7 +34,7 @@
       "type": "Full-Time",
       "description": "Join our rapidly growing team in Birmingham's Jewellery Quarter, where we're building the next generation of cloud-based enterprise solutions. This role offers a unique opportunity to work across our entire tech stack and influence architectural decisions.\n\nTechnical Requirements:\n- Node.js & Express.js expertise\n- MongoDB and PostgreSQL experience\n- React/Vue.js frontend development\n- AWS/Azure cloud services\n- Docker and Kubernetes knowledge\n\nCurrent Projects:\n- Microservices architecture implementation\n- Real-time data processing systems\n- AI-powered analytics platforms\n\nCompany Culture:\n- Regular knowledge sharing sessions\n- Remote-first approach with optional office days\n- Investment in latest technologies and tools\n- Clear career progression path\n- Regular hackathons and innovation days\n\nBenefits include gym membership, mental health support, and professional development allowance. Our modern office features collaboration spaces, quiet zones, and a game room.",
       "location": "Birmingham, UK",
-      "salary": "£40K - £50K",
+      "salary": "£40,000 - £50,000",
       "company": {
         "name": "Midland Software Solutions",
         "description": "Midland Software Solutions is a leading technology company specializing in digital solutions for businesses of all sizes. With a focus on innovation and customer satisfaction, we are committed to delivering cutting-edge products and services.",
@@ -44,11 +44,11 @@
     },
     {
       "id": "4",
-      "title": "WordPress Developer",
-      "type": "Part-Time",
-      "description": "Based in Bristol's creative quarter, we're seeking a WordPress expert to join our boutique digital agency. Working in a hybrid capacity, you'll be responsible for creating bespoke WordPress solutions for our diverse client base.\n\nEssential Skills:\n- Advanced PHP development\n- Custom WordPress theme development\n- WooCommerce expertise\n- ACF Pro and Gutenberg block development\n- Performance optimization experience\n\nDay-to-Day Activities:\n- Creating custom plugins\n- Theme customization\n- Security implementation\n- Site optimization and maintenance\n- Client consultation\n\nWork Environment:\n- Flexible 20-hour work week\n- Creative, informal atmosphere\n- Dog-friendly office\n- Regular team lunches\n- Collaborative project approach\n\nWe value work-life balance and offer flexible scheduling to accommodate school runs or other commitments. Our office is easily accessible by public transport and includes bike storage facilities.",
+      "title": "WordPress Development Intern",
+      "type": "Internship",
+      "description": "Join our Bristol-based digital agency as a WordPress Development Intern. This is a fantastic opportunity to learn WordPress development in a supportive environment.\n\nWhat You'll Learn:\n- PHP development fundamentals\n- WordPress theme development\n- Plugin customization\n- Website optimization\n- Development best practices\n\nRequirements:\n- Basic PHP knowledge\n- Understanding of HTML/CSS\n- Eager to learn WordPress\n- Good problem-solving skills\n- Computer Science degree (ongoing or recent graduate)\n\nWork Environment:\n- 20-hour work week\n- Mentorship program\n- Creative, informal atmosphere\n- Regular training sessions\n- Potential for full-time position\n\nWe provide a structured learning environment with regular feedback and opportunities to work on real client projects.",
       "location": "Bristol, UK",
-      "salary": "£30K - £40K",
+      "salary": "£10,000 - £20,000",
       "company": {
         "name": "West Country Digital",
         "description": "West Country Digital is a dynamic agency specializing in digital marketing and web development. We are committed to fostering a diverse and inclusive workplace where creativity and innovation thrive.",
@@ -58,11 +58,11 @@
     },
     {
       "id": "5",
-      "title": "Python Django Developer",
-      "type": "Full-Time",
-      "description": "Join our Edinburgh team in developing sophisticated e-commerce solutions using Python and Django. Located in the historic Leith district, we offer a blend of traditional Scottish hospitality with modern tech company culture.\n\nTechnical Requirements:\n- 4+ years Python development experience\n- Strong Django framework knowledge\n- Experience with Django REST framework\n- PostgreSQL and Redis expertise\n- Celery and asynchronous programming\n- Docker containerization\n\nCurrent Projects:\n- AI-powered recommendation engines\n- High-performance payment systems\n- International e-commerce platforms\n\nBenefits:\n- 35 days annual leave\n- Private pension scheme\n- Health insurance\n- Annual ski trip\n- Professional development budget\n\nOur newly renovated office features stunning views of Edinburgh Castle, with dedicated quiet spaces, collaboration areas, and a rooftop garden. We promote a healthy work-life balance and offer flexible working hours.",
+      "title": "Python Django Development Intern",
+      "type": "Internship",
+      "description": "Exciting opportunity to start your career in Python development at our Edinburgh office. Learn from experienced developers while working on real e-commerce solutions.\n\nWhat You'll Learn:\n- Python programming fundamentals\n- Django framework basics\n- Database management\n- API development\n- Testing methodologies\n\nRequirements:\n- Computer Science degree (ongoing or recent graduate)\n- Basic Python knowledge\n- Strong desire to learn\n- Problem-solving aptitude\n- Good communication skills\n\nBenefits:\n- Paid internship\n- Structured mentorship program\n- Regular feedback sessions\n- Training workshops\n- Potential for permanent position\n\nOur internship program includes hands-on experience with real projects and comprehensive training in modern development practices.",
       "location": "Edinburgh, UK",
-      "salary": "£60K - £70K",
+      "salary": "£20,000 - £30,000",
       "company": {
         "name": "Highland Tech Hub",
         "description": "Highland Tech Hub is a rapidly growing technology company specializing in e-commerce solutions. We offer a dynamic and collaborative work environment where employees are encouraged to think creatively and innovate.",
@@ -76,7 +76,7 @@
       "type": "Full-Time",
       "description": "Be part of Glasgow's thriving tech scene! We're looking for a Ruby on Rails developer to join our passionate team developing innovative solutions for the fintech sector. Our office is located in the vibrant Merchant City area.\n\nRequired Experience:\n- 3+ years Ruby on Rails development\n- SQL and PostgreSQL\n- Frontend skills (JavaScript, HTML5, CSS3)\n- Test-driven development\n- API design and implementation\n\nTechnology Stack:\n- Ruby 3.x and Rails 7\n- React for frontend components\n- Sidekiq for background processing\n- ElasticSearch\n- AWS infrastructure\n\nWhat Sets Us Apart:\n- 4-day work week (32 hours)\n- Remote-first culture\n- Unlimited learning resources\n- Regular international team retreats\n- Commitment to open source\n\nWe believe in sustainable development practices and maintaining a healthy work-life balance. Our modern office includes a meditation room, fully equipped kitchen, and monthly wellness activities.",
       "location": "Glasgow, UK",
-      "salary": "£20K - £30K",
+      "salary": "£20,000 - £30,000",
       "company": {
         "name": "Clyde Technologies",
         "description": "Clyde Technologies is a leading technology company specializing in software development and digital marketing. We are committed to providing our clients with cutting-edge solutions and our employees with a supportive and rewarding work environment.",
@@ -89,7 +89,7 @@
       "type": "Internship",
       "title": "Frontend Development Intern",
       "description": "Exciting opportunity for a passionate developer to start their career in web development. Work alongside experienced developers on real client projects.\n\nWhat You'll Learn:\n- Vue.js fundamentals and best practices\n- Modern JavaScript development\n- Git version control\n- Agile development practices\n- Testing methodologies\n\nRequirements:\n- Computer Science degree (ongoing or recent graduate)\n- Basic JavaScript knowledge\n- Eager to learn and grow\n- Good problem-solving skills\n\nBenefits:\n- Paid internship\n- Mentorship program\n- Potential for full-time position\n- Modern office environment\n- Regular feedback sessions",
-      "salary": "£20K - £30K",
+      "salary": "£20,000 - £30,000",
       "location": "Cambridge, UK",
       "company": {
         "name": "Tech Futures Lab",
@@ -103,7 +103,7 @@
       "type": "Full-Time",
       "title": "Senior Vue.js Architect",
       "description": "Looking for an experienced Vue.js Architect to lead our frontend development team and shape our technical direction.\n\nKey Responsibilities:\n- Architecture design and implementation\n- Performance optimization\n- Team mentorship and leadership\n- Code review and quality assurance\n- Technical documentation\n\nRequired Skills:\n- 8+ years of frontend development\n- 4+ years Vue.js experience\n- Strong system design skills\n- Team leadership experience\n- CI/CD expertise\n\nBenefits:\n- Competitive salary\n- Stock options\n- Private healthcare\n- Remote working options\n- Learning budget",
-      "salary": "£90K - £100K",
+      "salary": "£90,000 - £100,000",
       "location": "Oxford, UK",
       "company": {
         "name": "Innovation Stack",
@@ -117,7 +117,7 @@
       "type": "Part-Time",
       "title": "Vue.js Consultant",
       "description": "Seeking an experienced Vue.js developer for a part-time consulting role, working with various clients on project-based work.\n\nResponsibilities:\n- Technical consultation\n- Code review and optimization\n- Best practice implementation\n- Client communication\n- Documentation\n\nRequired Experience:\n- 5+ years Vue.js development\n- Strong communication skills\n- Project management experience\n- Client-facing experience\n\nBenefits:\n- Flexible hours\n- Remote work options\n- Competitive day rate\n- Project variety\n- Professional development",
-      "salary": "£60K - £70K",
+      "salary": "£60,000 - £70,000",
       "location": "Bristol, UK",
       "company": {
         "name": "Consulting Plus Digital",
@@ -131,7 +131,7 @@
       "type": "Full-Time",
       "title": "Full Stack Vue Developer",
       "description": "Join our cross-functional team building modern web applications with Vue.js frontend and Node.js backend.\n\nTechnical Requirements:\n- Vue.js and Nuxt.js expertise\n- Node.js and Express.js\n- MongoDB/PostgreSQL\n- AWS/Azure cloud services\n- Testing frameworks\n\nWhat We're Looking For:\n- 3+ years full stack experience\n- Strong problem-solving skills\n- Team player mindset\n- DevOps knowledge\n\nBenefits:\n- Flexible working hours\n- Health insurance\n- Regular team events\n- Learning budget\n- City center office",
-      "salary": "£50K - £60K",
+      "salary": "£50,000 - £60,000",
       "location": "Newcastle, UK",
       "company": {
         "name": "Northern Code Labs",
@@ -142,10 +142,10 @@
     },
     {
       "id": "11",
-      "type": "Remote",
+      "type": "Full-Time",
       "title": "DevOps Engineer (Vue Stack)",
       "description": "Join our platform team to build and maintain our CI/CD pipelines and cloud infrastructure for Vue.js applications.\n\nKey Responsibilities:\n- Maintain CI/CD pipelines\n- Cloud infrastructure management\n- Performance monitoring\n- Security implementation\n- Developer tooling\n\nRequired Skills:\n- 3+ years DevOps experience\n- AWS/Azure expertise\n- Docker and Kubernetes\n- Vue.js understanding\n- Security best practices\n\nBenefits:\n- Fully remote position\n- Flexible hours\n- Latest equipment provided\n- Learning allowance\n- Regular team meetups",
-      "salary": "£70K - £80K",
+      "salary": "£70,000 - £80,000",
       "location": "Remote, UK",
       "company": {
         "name": "Cloud Ops Solutions",
@@ -158,7 +158,7 @@
       "type": "Full-Time",
       "title": "Mid-Level Vue Developer",
       "description": "Looking for a mid-level Vue.js developer to join our product team working on our SaaS platform.\n\nResponsibilities:\n- Feature development\n- Bug fixing and maintenance\n- Code review\n- Technical documentation\n- Team collaboration\n\nRequired Skills:\n- 2-4 years Vue.js experience\n- TypeScript proficiency\n- Testing experience\n- Git workflow\n- Agile methodology\n\nBenefits:\n- Hybrid working model\n- Health insurance\n- Gym membership\n- Training budget\n- Regular social events",
-      "salary": "£50K - £60K",
+      "salary": "£50,000 - £60,000",
       "location": "Reading, UK",
       "company": {
         "name": "Digital Thames Valley",
@@ -173,7 +173,7 @@
       "type": "Full-Time",
       "title": "UI/UX Developer (Vue.js)",
       "description": "Seeking a UI/UX Developer with strong Vue.js skills to create beautiful and intuitive user interfaces.\n\nKey Responsibilities:\n- Frontend implementation\n- UI/UX prototyping\n- Component library maintenance\n- Design system implementation\n- Cross-browser testing\n\nRequired Skills:\n- 3+ years Vue.js experience\n- Strong design sensibility\n- CSS/SASS expertise\n- Figma proficiency\n- Animation skills\n\nBenefits:\n- Creative environment\n- Latest design tools\n- Flexible hours\n- City centre location\n- Professional development",
-      "salary": "£50K - £60K",
+      "salary": "£50,000 - £60,000",
       "location": "Brighton, UK",
       "company": {
         "name": "Coastal Design Co",
@@ -187,7 +187,7 @@
       "type": "Part-Time",
       "title": "Vue.js Mentor",
       "description": "Experienced Vue.js developer needed to mentor junior developers and conduct code reviews part-time.\n\nResponsibilities:\n- Code review and feedback\n- Technical mentoring\n- Best practice guidance\n- Learning path creation\n- Workshop facilitation\n\nRequired Skills:\n- 5+ years Vue.js experience\n- Strong communication skills\n- Teaching ability\n- Pattern recognition\n- Documentation skills\n\nBenefits:\n- Flexible schedule\n- Remote options\n- Competitive hourly rate\n- Learning resources\n- Community events",
-      "salary": "£40K - £50K",
+      "salary": "£40,000 - £50,000",
       "location": "Sheffield, UK",
       "company": {
         "name": "Dev Mentors UK",
@@ -201,7 +201,7 @@
       "type": "Full-Time",
       "title": "Vue Performance Specialist",
       "description": "Join our team as a Vue.js Performance Specialist to optimize and enhance our enterprise applications.\n\nKey Responsibilities:\n- Application performance auditing\n- Bundle size optimization\n- Memory leak detection and fixes\n- Runtime performance improvements\n- Performance monitoring implementation\n\nRequired Skills:\n- 4+ years Vue.js experience\n- Deep understanding of Vue internals\n- Chrome DevTools proficiency\n- Webpack/Vite optimization experience\n- Performance testing expertise\n\nBenefits:\n- 4-day work week\n- Remote-first culture\n- High-spec development machine\n- Conference speaking opportunities\n- Performance bonus scheme",
-      "salary": "£70K - £80K",
+      "salary": "£70,000 - £80,000",
       "location": "Cardiff, UK",
       "company": {
         "name": "Performance Plus Digital",

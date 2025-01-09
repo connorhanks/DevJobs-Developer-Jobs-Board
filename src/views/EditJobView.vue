@@ -66,7 +66,7 @@ onMounted(fetchJobDetails);
 </script>
 
 <template>
-  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen">
+  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen pt-24">
     <div class="container mx-auto px-4">
       <BackButton />
 
@@ -94,7 +94,7 @@ onMounted(fetchJobDetails);
         </div>
 
         <!-- Form Section -->
-        <div class="mx-auto">
+        <div class="mx-auto mb-12">
           <div
             class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100"
           >
