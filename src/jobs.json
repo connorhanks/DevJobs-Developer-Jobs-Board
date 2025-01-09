@@ -1,18 +1,18 @@
 {
   "jobs": [
     {
-      "id": "1",
-      "title": "Senior React Developer",
       "type": "Full-Time",
+      "title": "Senior React Developer",
       "description": "We are seeking a talented React Developer to join our dynamic team in our modern London office, situated in the heart of Tech City. The ideal candidate will lead complex projects and mentor junior developers while working on cutting-edge applications.\n\nTechnical Requirements:\n- 5+ years of experience with React.js and its ecosystem\n- Expert knowledge of JavaScript/TypeScript, HTML5, and CSS3\n- Experience with Redux, React Query, and Next.js\n- Strong understanding of REST APIs and GraphQL\n- Familiarity with testing frameworks (Jest, React Testing Library)\n\nWhat We Offer:\n- Hybrid working model (2 days office, 3 days remote)\n- Annual training budget of £2,000\n- Private healthcare and dental coverage\n- 25 days holiday + bank holidays\n- Regular team social events and hackathons\n\nOur modern office includes standing desks, relaxation areas, and a fully stocked kitchen. We follow agile methodologies and emphasize continuous learning and innovation.",
+      "salary": "£90K - £100K",
       "location": "London, UK",
-      "salary": "£60K - £70K",
       "company": {
         "name": "Pixel Bridge Digital",
         "description": "Pixel Bridge Digital is a leading technology company specializing in web development and digital solutions. We pride ourselves on delivering high-quality products and services to our clients while fostering a collaborative and innovative work environment.",
         "contactEmail": "careers@pixelbridge.co.uk",
         "contactPhone": "020-7123-4567"
-      }
+      },
+      "id": "1"
     },
     {
       "id": "2",

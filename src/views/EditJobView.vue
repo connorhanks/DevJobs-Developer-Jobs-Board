@@ -22,8 +22,13 @@ const form = reactive({
   },
 });
 
+const state = reactive({
+  job: {},
+  isLoading: true,
+});
+
 const handleSubmit = async () => {
-  const newJob = {
+  const updatedJob = {
     type: form.type,
     title: form.title,
     description: form.description,
@@ -37,29 +42,27 @@ const handleSubmit = async () => {
     },
   };
 
-  const state = reactive({
-    job: {},
-    isLoading: true,
-  });
-
   const toast = useToast();
 
   try {
-    const response = await fetch("/api/jobs", {
-      method: "POST",
+    const response = await fetch(`/api/jobs/${jobId}`, {
+      method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(newJob),
+      body: JSON.stringify(updatedJob),
     });
 
-    const data = await response.json();
-    const jobId = data.id;
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
 
-    toast.success("Job added successfully");
+    const data = await response.json();
+
+    toast.success("Job updated successfully");
     router.push(`/jobs/${jobId}`);
   } catch (error) {
-    toast.error("Failed to update job:", error);
+    toast.error(`Failed to update job: ${error.message}`);
   }
 };
 
