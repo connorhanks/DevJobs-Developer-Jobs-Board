@@ -83,34 +83,6 @@
         "contactEmail": "jobs@clydetech.co.uk",
         "contactPhone": "0141-678-9012"
       }
-    },
-    {
-      "id": "310e",
-      "type": "Part-Time",
-      "title": "Bruce Aguirre",
-      "description": "Odit tempor aut recu",
-      "salary": "£10K - £20K",
-      "location": "Elit dolor ea et ex",
-      "company": {
-        "name": "Manning Baldwin Trading",
-        "description": "Laboris deleniti imp",
-        "contactEmail": "nujohaw@mailinator.com",
-        "contactPhone": "+1 (423) 372-4538"
-      }
-    },
-    {
-      "id": "5e67",
-      "type": "Part-Time",
-      "title": "Giselle Thomas",
-      "description": "Quia ullam nulla vol",
-      "salary": "£40K - £50K",
-      "location": "Qui quam veniam rat",
-      "company": {
-        "name": "Saunders and Newman Associates",
-        "description": "Ea enim qui inventor",
-        "contactEmail": "jypadymetu@mailinator.com",
-        "contactPhone": "+1 (702) 892-4575"
-      }
     }
   ]
 }
