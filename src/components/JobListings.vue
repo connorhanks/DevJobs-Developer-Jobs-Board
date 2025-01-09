@@ -51,7 +51,7 @@ onMounted(async () => {
       </h2>
       <!-- Show loading spinner while state.isLoading is true -->
       <div v-if="state.isLoading" class="text-center text-gray-500 py-6">
-        <PulseLoader />
+        <PulseLoader color="#3B82F6" />
       </div>
 
       <!-- Show job listings when state.jobs is ready/data has finished fetching from API -->

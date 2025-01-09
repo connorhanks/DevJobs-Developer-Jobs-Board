@@ -69,7 +69,7 @@ onMounted(async () => {
       <BackButton />
 
       <div v-if="state.isLoading" class="text-center py-8">
-        <PulseLoader />
+        <PulseLoader color="#3B82F6" />
       </div>
 
       <div v-else class="grid md:grid-cols-3 gap-6">
