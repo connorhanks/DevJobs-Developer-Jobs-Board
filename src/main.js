@@ -5,7 +5,6 @@ import "vue-toastification/dist/index.css";
 import router from "./router";
 import Toast from "vue-toastification";
 import { createApp } from "vue";
-import { createPinia } from "pinia";
 import App from "./App.vue";
 
 const app = createApp(App);
@@ -28,6 +27,5 @@ const toastOptions = {
 
 app.use(Toast, toastOptions);
 app.use(router);
-app.use(createPinia());
 
 app.mount("#app");

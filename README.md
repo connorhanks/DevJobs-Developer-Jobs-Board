@@ -1,51 +1,105 @@
-# job-board
+# DevJobs
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern and responsive job board application built with Vue.js, specifically designed for companies to post developer positions and for developers to find their next role. This project demonstrates proficiency in modern Vue.js development practices, state management and responsive design.
 
-## Recommended IDE Setup
+![DevJobs](public/screenshot.png)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Features
 
-## Customize configuration
+- **Complete CRUD Operations:**
+  - Create new job listings
+  - Read and browse job details
+  - Update existing job postings
+  - Delete unwanted listings
+- **Job Listings:** Browse and search through developer positions
+- **Job Details:** Detailed view of each job posting with company information
+- **Job Management:** Create, edit and delete job listings
+- **Responsive Design:** Fully responsive layout that works on all devices
+- **Real-time Feedback:** Toast notifications for user actions
+- **Loading States:** Elegant loading animations during data fetching
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🛠️ Technologies Used
 
-## Project Setup
+- **Vue.js 3:** Latest version with Composition API
+- **Vue Router:** For client-side routing
+- **Tailwind CSS:** For modern, utility-first styling
+- **JSON Server:** For rapid backend prototyping
+- **Vue Toastification:** For user notifications
+- **Vue Spinner:** For loading states
+- **Vite:** For fast development and building
 
-```sh
-npm install
-```
+## 📋 Prerequisites
 
-### Compile and Hot-Reload for Development
+Before you begin, ensure you have the following installed:
 
-```sh
-npm run dev
-```
+- Node.js (v14.0.0 or higher)
+- npm (v6.0.0 or higher)
 
-### Compile and Minify for Production
+## 🚀 Getting Started
 
-```sh
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/connorhanks/devjobs.git
+   cd devjobs
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the mock backend server**
+
+   ```bash
+   npm run server
+   ```
+
+   This will start the JSON server on port 5000
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+   The application will be available at `http://localhost:5173`
+
+## 🎯 Key Features Demonstrated
+
+- **Component Composition:** Efficient use of Vue.js components for modularity and reusability
+- **State Management:** Reactive state handling using Vue's Composition API
+- **API Integration:** Asynchronous data fetching with error handling
+- **Form Handling:** Complex form implementations with validation
+- **Responsive Design:** Mobile-first approach using Tailwind CSS
+- **User Experience:** Loading states, notifications, and smooth transitions
+
+## 🔧 Development
+
+The project uses several modern development tools and practices:
+
+- **Vite** for blazing-fast development and building
+- **ESLint** for code quality
+- **Tailwind CSS** for utility-first styling
+- **Vue Router** for client-side routing
+
+## 🚀 Deployment
+
+To build the project for production:
+
+```bash
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+This will generate a `dist` directory with production-ready files.
 
-```sh
-npm run test:unit
-```
+## 🤝 Contributing
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-```sh
-npm run test:e2e:dev
-```
+## 📝 License
 
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
+## 🙋‍♂️ Contact
 
-```sh
-npm run build
-npm run test:e2e
-```
+Email - [hello@connorhanks.com](mailto:hello@connorhanks.com)
