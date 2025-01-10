@@ -10,6 +10,30 @@ const router = useRouter();
 const toast = useToast();
 const jobId = route.params.id;
 
+const salaryRanges = [
+  "£0 - £10,000",
+  "£10,000 - £20,000",
+  "£20,000 - £30,000",
+  "£30,000 - £40,000",
+  "£40,000 - £50,000",
+  "£50,000 - £60,000",
+  "£60,000 - £70,000",
+  "£70,000 - £80,000",
+  "£80,000 - £90,000",
+  "£90,000 - £100,000",
+  "£100,000 - £110,000",
+  "£110,000 - £120,000",
+  "£120,000 - £130,000",
+  "£130,000 - £140,000",
+  "£140,000 - £150,000",
+  "£150,000 - £160,000",
+  "£160,000 - £170,000",
+  "£170,000 - £180,000",
+  "£180,000 - £190,000",
+  "£190,000 - £200,000",
+  "£200,000+",
+];
+
 const state = reactive({
   isLoading: true,
 });
@@ -143,14 +167,22 @@ onMounted(fetchJobDetails);
 
                   <div class="form-group">
                     <label class="block text-sm font-medium text-gray-700 mb-2">
-                      Salary
+                      Salary Range
                     </label>
-                    <input
+                    <select
                       v-model="form.salary"
-                      type="text"
                       class="input-field w-full"
                       required
-                    />
+                    >
+                      <option value="" disabled>Select a salary range</option>
+                      <option
+                        v-for="range in salaryRanges"
+                        :key="range"
+                        :value="range"
+                      >
+                        {{ range }}
+                      </option>
+                    </select>
                   </div>
                 </div>
 

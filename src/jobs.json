@@ -15,10 +15,10 @@
       "id": "1"
     },
     {
-      "title": "Angular Developer",
-      "type": "Part-Time",
+      "title": "Senior Angular Developer",
+      "type": "Full-Time",
       "location": "Manchester, UK",
-      "salary": "£40,000 - £50,000",
+      "salary": "£60,000 - £70,000",
       "description": "Looking for a flexible part-time role that allows you to maintain work-life balance while working on exciting projects? Join our Manchester-based team working 20-25 hours per week, with the option to work fully remote.\n\nRequired Skills:\n- 3+ years of Angular experience (version 2+)\n- Strong TypeScript fundamentals\n- Experience with RxJS and NgRx\n- Knowledge of Material Design\n- Unit testing experience with Jasmine/Karma\n\nProject Focus:\n- E-commerce platforms\n- Financial service applications\n- Data visualization dashboards\n\nPerks:\n- Flexible working hours\n- Pro-rata benefits package\n- Quarterly team building events\n- Learning and development opportunities\n\nOur collaborative team structure ensures part-time members are fully integrated into project planning and decision-making processes.",
       "company": {
         "name": "Northern Tech Labs",
@@ -99,18 +99,18 @@
       }
     },
     {
-      "id": "8",
+      "title": "Senior Vue.js Dev",
       "type": "Full-Time",
-      "title": "Senior Vue.js Architect",
-      "description": "Looking for an experienced Vue.js Architect to lead our frontend development team and shape our technical direction.\n\nKey Responsibilities:\n- Architecture design and implementation\n- Performance optimization\n- Team mentorship and leadership\n- Code review and quality assurance\n- Technical documentation\n\nRequired Skills:\n- 8+ years of frontend development\n- 4+ years Vue.js experience\n- Strong system design skills\n- Team leadership experience\n- CI/CD expertise\n\nBenefits:\n- Competitive salary\n- Stock options\n- Private healthcare\n- Remote working options\n- Learning budget",
-      "salary": "£90,000 - £100,000",
       "location": "Oxford, UK",
+      "salary": "£90,000 - £100,000",
+      "description": "Looking for an experienced Vue.js Architect to lead our frontend development team and shape our technical direction.\n\nKey Responsibilities:\n- Architecture design and implementation\n- Performance optimization\n- Team mentorship and leadership\n- Code review and quality assurance\n- Technical documentation\n\nRequired Skills:\n- 8+ years of frontend development\n- 4+ years Vue.js experience\n- Strong system design skills\n- Team leadership experience\n- CI/CD expertise\n\nBenefits:\n- Competitive salary\n- Stock options\n- Private healthcare\n- Remote working options\n- Learning budget",
       "company": {
         "name": "Innovation Stack",
         "description": "Innovation Stack builds enterprise-level applications for Fortune 500 companies. We're known for our technical excellence and innovative solutions to complex problems.",
         "contactEmail": "careers@innovationstack.co.uk",
         "contactPhone": "01865-345-678"
-      }
+      },
+      "id": "8"
     },
     {
       "id": "9",
@@ -208,6 +208,20 @@
         "description": "Performance Plus Digital specializes in optimizing web applications for enterprise clients. We're passionate about creating fast, efficient, and scalable applications that provide exceptional user experiences.",
         "contactEmail": "careers@performanceplus.co.uk",
         "contactPhone": "029-2234-5678"
+      }
+    },
+    {
+      "id": "8e12",
+      "title": "Senior Developer",
+      "type": "Full-Time",
+      "location": "Consequatur A est s",
+      "salary": "£60,000 - £70,000",
+      "description": "Dolor voluptatem Ex",
+      "company": {
+        "name": "Voluptas occaecat no",
+        "description": "Molestiae reprehende",
+        "contactEmail": "gykuqyf@mailinator.com",
+        "contactPhone": "+1 (634) 642-4998"
       }
     }
   ]

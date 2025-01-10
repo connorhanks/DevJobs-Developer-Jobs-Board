@@ -16,7 +16,7 @@
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-24">
         <RouterLink to="/" class="flex items-center space-x-3">
-          <div class="p-2.5 rounded-lg bg-white/10 backdrop-blur-sm">
+          <div class="px-2 py-1 rounded-lg bg-white/10 backdrop-blur-sm">
             <i class="mdi mdi-code-tags text-white text-2xl"></i>
           </div>
           <span class="text-white font-bold text-2xl">DevJobs</span>
