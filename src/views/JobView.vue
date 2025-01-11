@@ -128,46 +128,41 @@ onMounted(getJobsDataById);
           <!-- Sidebar -->
           <aside class="space-y-6">
             <!-- Company Card -->
-            <div
+            <article
               class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100"
             >
-              <div class="flex items-center justify-between mb-6">
-                <h3 class="text-xl font-bold text-gray-900">Company Details</h3>
-                <div
-                  class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center"
-                >
-                  <i class="mdi mdi-office-building text-blue-600 text-2xl"></i>
-                </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                About the Company
+              </h3>
+              <div class="prose prose-blue max-w-none text-gray-600 mb-6">
+                {{ state.job.company.description }}
               </div>
-              <div class="space-y-6">
-                <div>
-                  <h4 class="font-bold text-gray-900 mb-2">About</h4>
-                  <p class="text-gray-600">
-                    {{ state.job.company.description }}
-                  </p>
-                </div>
-                <div>
-                  <h4 class="font-bold text-gray-900 mb-2">Contact</h4>
-                  <div class="space-y-3">
+
+              <!-- Contact Information -->
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <i
+                    class="mdi mdi-email text-blue-600 text-xl mt-0.5 shrink-0"
+                  ></i>
+                  <div class="min-w-0">
                     <a
                       :href="`mailto:${state.job.company.contactEmail}`"
-                      class="flex items-center text-blue-600 hover:text-blue-700"
+                      class="text-blue-600 hover:text-blue-800 break-all"
                     >
-                      <i class="mdi mdi-email mr-2"></i>
                       {{ state.job.company.contactEmail }}
-                    </a>
-                    <a
-                      v-if="state.job.company.contactPhone"
-                      :href="`tel:${state.job.company.contactPhone}`"
-                      class="flex items-center text-blue-600 hover:text-blue-700"
-                    >
-                      <i class="mdi mdi-phone mr-2"></i>
-                      {{ state.job.company.contactPhone }}
                     </a>
                   </div>
                 </div>
+                <a
+                  v-if="state.job.company.contactPhone"
+                  :href="`tel:${state.job.company.contactPhone}`"
+                  class="flex items-center text-blue-600 hover:text-blue-700"
+                >
+                  <i class="mdi mdi-phone mr-2"></i>
+                  {{ state.job.company.contactPhone }}
+                </a>
               </div>
-            </div>
+            </article>
 
             <!-- Apply Now Card -->
             <div
