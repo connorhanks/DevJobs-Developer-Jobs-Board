@@ -40,6 +40,15 @@ A modern and responsive job board application built with Vue.js, specifically de
 - **Vue Spinner:** For loading states
 - **Vite:** For fast development and building
 
+- ## 🎯 Key Features Demonstrated
+
+- **Component Composition:** Efficient use of Vue.js components for modularity and reusability
+- **State Management:** Reactive state handling using Vue's Composition API
+- **API Integration:** Asynchronous data fetching with error handling
+- **Form Handling:** Complex form implementations with validation
+- **Responsive Design:** Mobile-first approach using Tailwind CSS
+- **User Experience:** Loading states, notifications and smooth transitions
+
 ## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
@@ -75,15 +84,6 @@ Before you begin, ensure you have the following installed:
    npm run dev
    ```
    The application will be available at `http://localhost:3000`
-
-## 🎯 Key Features Demonstrated
-
-- **Component Composition:** Efficient use of Vue.js components for modularity and reusability
-- **State Management:** Reactive state handling using Vue's Composition API
-- **API Integration:** Asynchronous data fetching with error handling
-- **Form Handling:** Complex form implementations with validation
-- **Responsive Design:** Mobile-first approach using Tailwind CSS
-- **User Experience:** Loading states, notifications and smooth transitions
 
 ## 🚀 Deployment
 
