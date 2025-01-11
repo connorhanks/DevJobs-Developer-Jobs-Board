@@ -2,7 +2,19 @@
 
 A modern and responsive job board application built with Vue.js, specifically designed for companies to post developer positions and for developers to find their next role. This project demonstrates proficiency in modern Vue.js development practices, state management and responsive design.
 
-![DevJobs](public/screenshot.png)
+## 🌟 Screenshots
+
+### Landing Page
+
+![Landing Page](public/screenshots/landing-page.png)
+
+### Available Jobs Page
+
+![Available Jobs Page](public/screenshots/available-jobs-page.png)
+
+### Job Details Page
+
+![Job Details Page](public/screenshots/job-details-page.png)
 
 ## 🚀 Features
 
@@ -72,15 +84,6 @@ Before you begin, ensure you have the following installed:
 - **Form Handling:** Complex form implementations with validation
 - **Responsive Design:** Mobile-first approach using Tailwind CSS
 - **User Experience:** Loading states, notifications and smooth transitions
-
-## 🔧 Development
-
-The project uses several modern development tools and practices:
-
-- **Vite** for blazing-fast development and building
-- **ESLint** for code quality
-- **Tailwind CSS** for utility-first styling
-- **Vue Router** for client-side routing
 
 ## 🚀 Deployment
 
