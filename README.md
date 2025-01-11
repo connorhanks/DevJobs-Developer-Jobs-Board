@@ -62,7 +62,7 @@ Before you begin, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/connorhanks/Jobs-Board-App.git
-   cd devjobs
+   cd Jobs-Board-App
    ```
 
 2. **Install dependencies**
