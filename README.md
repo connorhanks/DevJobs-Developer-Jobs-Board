@@ -61,7 +61,7 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/connorhanks/devjobs.git
+   git clone https://github.com/connorhanks/Jobs-Board-App.git
    cd devjobs
    ```
 
