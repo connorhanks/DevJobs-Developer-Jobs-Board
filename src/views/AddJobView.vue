@@ -69,7 +69,7 @@ const handleSubmit = async () => {
   <section
     class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen pt-24"
   >
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 pb-12 sm:pb-24">
       <BackButton />
 
       <!-- Hero Section -->
