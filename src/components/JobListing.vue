@@ -18,8 +18,9 @@ const truncatedDescription = computed(() => {
 </script>
 
 <template>
-  <div
+  <article
     class="group relative rounded-2xl bg-gradient-to-br from-white to-blue-50/50 border border-blue-100/50 hover:border-blue-200/50 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
+    :aria-labelledby="`job-title-${job.id}`"
   >
     <!-- Decorative corner gradient -->
     <div
@@ -105,5 +106,5 @@ const truncatedDescription = computed(() => {
         ></i>
       </RouterLink>
     </div>
-  </div>
+  </article>
 </template>

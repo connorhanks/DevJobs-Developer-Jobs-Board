@@ -4,7 +4,7 @@
       "title": "Senior React Developer",
       "type": "Full-Time",
       "location": "London, UK",
-      "salary": "£90,000 - £100,000",
+      "salary": "£80,000 - £90,000",
       "description": "We are seeking a talented React Developer to join our dynamic team in our modern London office, situated in the heart of Tech City. The ideal candidate will lead complex projects and mentor junior developers while working on cutting-edge applications.\n\nTechnical Requirements:\n- 5+ years of experience with React.js and its ecosystem\n- Expert knowledge of JavaScript/TypeScript, HTML5, and CSS3\n- Experience with Redux, React Query, and Next.js\n- Strong understanding of REST APIs and GraphQL\n- Familiarity with testing frameworks (Jest, React Testing Library)\n\nWhat We Offer:\n- Hybrid working model (2 days office, 3 days remote)\n- Annual training budget of £2,000\n- Private healthcare and dental coverage\n- 25 days holiday + bank holidays\n- Regular team social events and hackathons\n\nOur modern office includes standing desks, relaxation areas, and a fully stocked kitchen. We follow agile methodologies and emphasize continuous learning and innovation.",
       "company": {
         "name": "Pixel Bridge Digital",
@@ -208,20 +208,6 @@
         "description": "Performance Plus Digital specializes in optimizing web applications for enterprise clients. We're passionate about creating fast, efficient, and scalable applications that provide exceptional user experiences.",
         "contactEmail": "careers@performanceplus.co.uk",
         "contactPhone": "029-2234-5678"
-      }
-    },
-    {
-      "id": "8e12",
-      "title": "Senior Developer",
-      "type": "Full-Time",
-      "location": "Consequatur A est s",
-      "salary": "£60,000 - £70,000",
-      "description": "Dolor voluptatem Ex",
-      "company": {
-        "name": "Voluptas occaecat no",
-        "description": "Molestiae reprehende",
-        "contactEmail": "gykuqyf@mailinator.com",
-        "contactPhone": "+1 (634) 642-4998"
       }
     }
   ]

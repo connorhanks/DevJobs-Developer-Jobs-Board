@@ -43,7 +43,9 @@ onMounted(getJobsDataById);
 </script>
 
 <template>
-  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen pt-24">
+  <section
+    class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen pt-24"
+  >
     <div class="container mx-auto px-4">
       <BackButton />
 
@@ -53,7 +55,7 @@ onMounted(getJobsDataById);
 
       <div v-else>
         <!-- Hero Section -->
-        <div
+        <header
           class="relative rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 p-8 md:p-12 mb-8 overflow-hidden"
         >
           <div
@@ -102,14 +104,14 @@ onMounted(getJobsDataById);
               </button>
             </div>
           </div>
-        </div>
+        </header>
 
         <!-- Content Grid -->
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Main Content -->
-          <div class="md:col-span-2">
+          <section class="md:col-span-2">
             <!-- Job Description -->
-            <div
+            <article
               class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100"
             >
               <h2 class="text-2xl font-bold text-gray-900 mb-6">
@@ -120,11 +122,11 @@ onMounted(getJobsDataById);
               >
                 {{ state.job.description }}
               </div>
-            </div>
-          </div>
+            </article>
+          </section>
 
           <!-- Sidebar -->
-          <div class="space-y-6">
+          <aside class="space-y-6">
             <!-- Company Card -->
             <div
               class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100"
@@ -183,9 +185,9 @@ onMounted(getJobsDataById);
                 Apply Now
               </a>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>

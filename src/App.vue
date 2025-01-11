@@ -5,8 +5,9 @@ import Navbar from "@/components/Navbar.vue";
 </script>
 
 <template>
-  <!-- Navbar will be fixed at top of all pages -->
-  <Navbar />
+  <header>
+    <Navbar />
+  </header>
   <main>
     <RouterView />
   </main>

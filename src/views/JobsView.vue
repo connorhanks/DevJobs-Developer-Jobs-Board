@@ -87,10 +87,12 @@ onMounted(fetchJobs);
 </script>
 
 <template>
-  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen pt-24">
+  <section
+    class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen pt-24"
+  >
     <div class="container mx-auto px-4 py-8">
       <!-- Hero Section -->
-      <div
+      <header
         class="relative rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 p-8 md:p-12 mb-8 overflow-hidden"
       >
         <div
@@ -172,27 +174,30 @@ onMounted(fetchJobs);
             </div>
           </div>
         </div>
-      </div>
+      </header>
 
       <!-- Loading State -->
-      <div
+      <section
         v-if="state.isLoading"
         class="flex justify-center items-center py-20"
       >
         <PulseLoader color="#3B82F6" />
-      </div>
+      </section>
 
       <!-- No Results -->
-      <div v-else-if="filteredJobs.length === 0" class="text-center py-20">
+      <section v-else-if="filteredJobs.length === 0" class="text-center py-20">
         <i class="mdi mdi-file-search-outline text-6xl text-gray-400 mb-4"></i>
         <h3 class="text-xl font-medium text-gray-600">No jobs found</h3>
         <p class="text-gray-500 mt-2">Try adjusting your search criteria</p>
-      </div>
+      </section>
 
       <!-- Job Listings Grid -->
-      <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section
+        v-else
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
         <JobListing v-for="job in filteredJobs" :key="job.id" :job="job" />
-      </div>
+      </section>
     </div>
-  </div>
+  </section>
 </template>

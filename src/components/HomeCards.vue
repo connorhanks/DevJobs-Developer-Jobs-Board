@@ -3,8 +3,8 @@ import { RouterLink } from "vue-router";
 </script>
 
 <template>
-  <div class="grid md:grid-cols-2 gap-6 mb-12">
-    <div
+  <section class="grid md:grid-cols-2 gap-6 mb-12">
+    <article
       class="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-1 transition"
     >
       <div class="flex items-start mb-4">
@@ -24,9 +24,9 @@ import { RouterLink } from "vue-router";
         Browse Jobs
         <span class="mdi mdi-arrow-right ml-2"></span>
       </RouterLink>
-    </div>
+    </article>
 
-    <div
+    <article
       class="relative rounded-xl shadow-lg p-8 transform hover:-translate-y-1 transition overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-600 border border-white/30"
     >
       <div class="flex items-start mb-4">
@@ -46,6 +46,6 @@ import { RouterLink } from "vue-router";
         Post a Job
         <span class="mdi mdi-arrow-right ml-2"></span>
       </RouterLink>
-    </div>
-  </div>
+    </article>
+  </section>
 </template>

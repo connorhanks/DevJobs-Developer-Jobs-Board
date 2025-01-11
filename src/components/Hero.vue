@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     class="relative bg-gradient-to-r from-blue-600 to-indigo-600 h-[500px] overflow-hidden"
   >
     <!-- Grid overlay pattern -->
@@ -27,8 +27,9 @@
       class="absolute top-40 left-20 w-20 h-20 rounded-lg bg-gradient-to-br from-white/[0.1] to-transparent transform -rotate-12 animate-float"
     ></div>
 
-    <div class="relative container mx-auto px-4 h-full flex items-center">
-      <div class="max-w-2xl">
+    <!-- Content -->
+    <article class="relative container mx-auto px-4 h-full flex items-center">
+      <header class="max-w-2xl">
         <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
           Let's get you hired
         </h1>
@@ -36,7 +37,7 @@
           Find the developer role that's right for you. Browse hundreds of
           positions from top companies.
         </p>
-        <div class="flex gap-4">
+        <nav class="flex gap-4">
           <RouterLink
             to="/jobs"
             class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
@@ -49,10 +50,10 @@
           >
             Post a Job
           </RouterLink>
-        </div>
-      </div>
-    </div>
-  </div>
+        </nav>
+      </header>
+    </article>
+  </section>
 </template>
 
 <style>

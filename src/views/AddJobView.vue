@@ -66,12 +66,14 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen pt-24">
+  <section
+    class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen pt-24"
+  >
     <div class="container mx-auto px-4">
       <BackButton />
 
       <!-- Hero Section -->
-      <div
+      <header
         class="relative rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 p-8 md:p-12 mb-8 overflow-hidden"
       >
         <div
@@ -86,15 +88,19 @@ const handleSubmit = async () => {
             your team.
           </p>
         </div>
-      </div>
+      </header>
 
       <!-- Form Section -->
-      <div class="mx-auto">
-        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+      <section class="mx-auto">
+        <article
+          class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100"
+        >
           <form @submit.prevent="handleSubmit" class="space-y-8">
             <!-- Job Details Section -->
-            <div>
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">Job Details</h2>
+            <fieldset>
+              <legend class="text-2xl font-bold text-gray-900 mb-6">
+                Job Details
+              </legend>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="form-group">
                   <label class="block text-sm font-medium text-gray-700 mb-2">
@@ -164,13 +170,13 @@ const handleSubmit = async () => {
                   required
                 ></textarea>
               </div>
-            </div>
+            </fieldset>
 
             <!-- Company Details Section -->
-            <div>
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">
+            <fieldset>
+              <legend class="text-2xl font-bold text-gray-900 mb-6">
                 Company Information
-              </h2>
+              </legend>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="form-group">
                   <label class="block text-sm font-medium text-gray-700 mb-2">
@@ -219,20 +225,20 @@ const handleSubmit = async () => {
                   ></textarea>
                 </div>
               </div>
-            </div>
+            </fieldset>
 
             <!-- Submit Button -->
-            <div class="flex justify-end">
+            <footer class="flex justify-end">
               <button
                 type="submit"
                 class="bg-blue-600 text-white px-8 py-3 rounded-xl font-medium hover:bg-blue-700 transition-colors duration-200"
               >
                 Post Job
               </button>
-            </div>
+            </footer>
           </form>
-        </div>
-      </div>
+        </article>
+      </section>
     </div>
-  </div>
+  </section>
 </template>
